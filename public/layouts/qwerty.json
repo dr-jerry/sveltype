@@ -1,0 +1,233 @@
+[
+        [{
+            "keys": ["~", "`"]
+        }, {
+            "keys": ["!", "1"]
+        }, {
+            "keys": ["@", "2"]
+        }, {
+            "keys": ["#", "3"]
+        }, {
+            "keys": ["$", "4"]
+        }, {
+            "keys": ["%", "5"]
+        }, {
+            "keys": ["^", "6"]
+        }, {
+            "keys": ["&", "7"]
+        }, {
+            "keys": ["*", "8"]
+        }, {
+            "keys": ["(", "9"]
+        }, {
+            "keys": [")", "0"]
+        }, {
+            "keys": ["_", "-"]
+        }, {
+            "keys": ["+", "="]
+        }, {
+            "special": "true",
+            "class": "bksp",
+            "keys": ["Bksp", ""]
+        }],[
+            {
+                "special": "true",
+                "class": "tab",
+                "keys": ["Tab", ""]
+            },
+
+            {
+                "keys": ["Q", ""]
+            },
+
+            {
+                "keys": ["W", ""]
+            },
+
+            {
+                "keys": ["E", ""]
+            },
+
+            {
+                "keys": ["R", ""]
+            },
+
+            {
+                "keys": ["T", ""]
+            },
+
+            {
+                "keys": ["Y", ""]
+            },
+
+            {
+                "keys": ["U", ""]
+            },
+
+            {
+                "keys": ["I", ""]
+            },
+
+            {
+                "keys": ["O", ""]
+            },
+
+            {
+                "keys": ["P", ""]
+            },
+
+            {
+                "keys": ["{", "["]
+            },
+
+            {
+                "keys": ["}", "]"]
+            },
+
+            {
+                "keys": ["|", "\\"]
+            }
+
+        ], [
+
+            {
+                "special": "true",
+                "class": "caps",
+                "keys": ["Caps", ""]
+            },
+
+            {
+                "keys": ["A", ""]
+            },
+
+            {
+                "keys": ["S", ""]
+            },
+
+            {
+                "keys": ["D", ""]
+            },
+
+            {
+                "keys": ["F", ""]
+            },
+
+            {
+                "keys": ["G", ""]
+            },
+
+            {
+                "keys": ["H", ""]
+            },
+
+            {
+                "keys": ["J", ""]
+            },
+
+            {
+                "keys": ["K", ""]
+            },
+
+            {
+                "keys": ["L", ""]
+            },
+
+            {
+                "keys": [":", ";"]
+            },
+
+            {
+                "keys": ["\"", "'"]
+            },
+
+            {
+                "special": "true",
+                "class": "enter",
+                "keys": ["Enter", ""]
+            }
+        ], [
+            {
+                "special": "true",
+                "class": "shift_left",
+                "keys": ["Shift", ""]
+            },
+
+            {
+                "keys": ["Z", ""]
+            },
+
+            {
+                "keys": ["X", ""]
+            },
+
+            {
+                "keys": ["C", ""]
+            },
+
+            {
+                "keys": ["V", ""]
+            },
+
+            {
+                "keys": ["B", ""]
+            },
+
+            {
+                "keys": ["N", ""]
+            },
+
+            {
+                "keys": ["M", ""]
+            },
+
+            {
+                "keys": ["<", ","]
+            },
+
+            {
+                "keys": [">", "."]
+            },
+
+            {
+                "keys": ["?", "\/"]
+            },
+
+            {
+                "special": "true",
+                "class": "shift_right",
+                "keys": ["Shift", ""]
+            }
+
+        ], [
+
+            {
+                "special": "true",
+                "class": "ctrl_left",
+                "keys": ["Ctrl", ""]
+            },
+
+            {
+                "special": "true",
+                "class": "alt_left",
+                "keys": ["Alt", ""]
+            },
+
+            {
+                "special": "true",
+                "class": "space",
+                "keys": ["", ""]
+            },
+
+            {
+                "special": "true",
+                "class": "ctrl_right",
+                "keys": ["Ctrl", ""]
+            },
+
+            {
+                "special": "true",
+                "class": "alt_right",
+                "keys": ["Alt", ""]
+            }
+        ]
+    ]
