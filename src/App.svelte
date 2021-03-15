@@ -10,7 +10,8 @@
 	}
 	function handleType(evt) {
 		console.log("handle store " + $actionstore);
-		actionstore.update((as) => ({...as, ...{expected: courseText[0], "typed" : evt.key }}));
+		actionstore.update((as) => ({...as, ...{expected: courseText[0]
+			, "typed" : evt.key, focus: courseText[1] || "end" }}));
 		courseText = courseText.substr(1)
 	}
 	import ConfigMenu from './ConfigMenu.svelte';

@@ -29,8 +29,15 @@
     margin: 0 auto;
   }
   .input {
+    white-space: nowrap;
     width: 100%;
     font-family: Typewriter;
     font-size: 2.2em;
+    height: 2.2em;
+    margin: 0.3em;
+    padding: 0.1em;
+    border: 1px black solid;
+    border-radius: 6pt;
+    overflow: hidden;
   }
 </style>

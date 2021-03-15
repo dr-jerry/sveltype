@@ -1,6 +1,7 @@
 <script>
     import { actionstore } from './actionstore.js';
-     export let keyData = {};
+    export let keyData = {};
+    let focus = false;
     console.log("keyData = " + JSON.stringify(keyData));
     export const stats = {}
     function keyClick (key) {
@@ -10,7 +11,12 @@
     }
     
     const unsubscribe = actionstore.subscribe(keyAction => {
-       if console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)
+        console.log("keydata " )
+       focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
+       if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
+         || keyData.keys.includes(keyAction.typed.toUpperCase()))) {
+           console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)
+       }
     });
 
 </script>
@@ -40,11 +46,16 @@
     .key.alt, .key.ctrl {
         width: 7%;
     }
+    .expected {
+        background-image: url(/img/vizier.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .bottom-k { height: 50%; width: 100%; vertical-align: bottom; }
     .top-k { height: 50%; width: 100%; vertical-align: baseline; }
 </style>
-<div class="key {keyData.special ? keyData.class : ''}">
-    <div class="top-k">
+<div class="key {keyData.special ? keyData.class : ''}" class:expected={focus}>
+    <div class="bottom-l">
         {@html keyData.keys[0] || "&nbsp;"}
     </div>
     <div class="bottom-k">
