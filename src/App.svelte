@@ -12,7 +12,7 @@
 		console.log("handle store " + $actionstore);
 		actionstore.update((as) => ({...as, ...{expected: courseText[0]
 			, "typed" : evt.key, focus: courseText[1] || "end" }}));
-		courseText = courseText.substr(1)
+		courseText = courseText.substr(1);
 	}
 	import ConfigMenu from './ConfigMenu.svelte';
 	import Course from './Course.svelte';
@@ -25,7 +25,7 @@
 	<div class="nav"><ConfigMenu configs={configs} on:showCourse={showCourse}/></div>
 	{#if course}
   	   <div class="play ground">
-	     <Course theCourse={course} courseText={courseText}></Course>/>
+	     <Course theCourse={course} courseText={courseText}></Course>
 	   </div>
 	{/if}
 </main>

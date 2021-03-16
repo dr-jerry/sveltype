@@ -24,9 +24,11 @@
     .key{
         width: 5%;
         margin:  0.313em;
+        padding-bottom: 0.33em;
         border: 2px solid #999999;
         border-radius: 5px;
         display: inline-block;
+        height: 100%;
     }
     .key.space{
         width: 45%;
@@ -48,7 +50,7 @@
     }
     .expected {
         background-image: url(/img/vizier.svg);
-        background-position: center;
+        background-position: 50% 30%;
         background-repeat: no-repeat;
     }
     .bottom-k { height: 50%; width: 100%; vertical-align: bottom; }
@@ -56,7 +58,7 @@
 </style>
 <div class="key {keyData.special ? keyData.class : ''}" class:expected={focus}>
     <div class="bottom-l">
-        {@html keyData.keys[0] || "&nbsp;"}
+        {@html (keyData.keys[0] === ' ' || !keyData.keys[0] ? "&nbsp;" : keyData.keys[0])}
     </div>
     <div class="bottom-k">
         {@html keyData.keys[1] || "&nbsp;"}

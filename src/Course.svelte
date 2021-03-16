@@ -15,7 +15,8 @@
   {#await theLayout}
     <p class="waiting">...Waiting</p>
   {:then rows}
-    <div class="type input text">{courseText}</div>
+    <div class="type input text">
+      <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}</div>
     {#each rows as row}
       <Row rowData={row}/>
     {/each}
@@ -24,6 +25,11 @@
 </div>
 
 <style>
+  .focus {
+      padding-bottom: -0.05em;
+      background-color: #CC44BB;
+      border-bottom: 2px solid #CC4444;
+  }
   .course.description {
     width: 30em;
     margin: 0 auto;
@@ -36,6 +42,7 @@
     height: 2.2em;
     margin: 0.3em;
     padding: 0.1em;
+    padding-left: 0.4em;
     border: 1px black solid;
     border-radius: 6pt;
     overflow: hidden;
