@@ -10,7 +10,8 @@
         }, {
             "keys": ["$", "4"]
         }, {
-            "keys": ["%", "5"]
+            "keys": ["%", "5"],
+            "class" : "lh right"
         }, {
             "keys": ["^", "6"]
         }, {
@@ -26,12 +27,12 @@
         }, {
             "keys": ["+", "="]
         }, {
-            "special": "true",
+            
             "class": "bksp",
             "keys": ["Bksp", ""]
         }],[
             {
-                "special": "true",
+                
                 "class": "tab",
                 "keys": ["Tab", ""]
             },
@@ -53,7 +54,8 @@
             },
 
             {
-                "keys": ["T", ""]
+                "keys": ["T", ""],
+                "class" : "lh right"
             },
 
             {
@@ -91,7 +93,7 @@
         ], [
 
             {
-                "special": "true",
+                
                 "class": "caps",
                 "keys": ["Caps", ""]
             },
@@ -113,7 +115,8 @@
             },
 
             {
-                "keys": ["G", ""]
+                "keys": ["G", ""],
+                "class" : "lh right"
             },
 
             {
@@ -141,13 +144,13 @@
             },
 
             {
-                "special": "true",
+                
                 "class": "enter",
                 "keys": ["Enter", ""]
             }
         ], [
             {
-                "special": "true",
+                
                 "class": "shift_left",
                 "keys": ["Shift", ""]
             },
@@ -169,7 +172,8 @@
             },
 
             {
-                "keys": ["B", ""]
+                "keys": ["B", ""],
+                "class" : "lh right"
             },
 
             {
@@ -193,7 +197,7 @@
             },
 
             {
-                "special": "true",
+                
                 "class": "shift_right",
                 "keys": ["Shift", ""]
             }
@@ -201,31 +205,31 @@
         ], [
 
             {
-                "special": "true",
+                
                 "class": "ctrl_left",
                 "keys": ["Ctrl", ""]
             },
 
             {
-                "special": "true",
+                
                 "class": "alt_left",
                 "keys": ["Alt", ""]
             },
 
             {
-                "special": "true",
+                
                 "class": "space",
                 "keys": [" ", ""]
             },
 
             {
-                "special": "true",
+                
                 "class": "ctrl_right",
                 "keys": ["Ctrl", ""]
             },
 
             {
-                "special": "true",
+                
                 "class": "alt_right",
                 "keys": ["Alt", ""]
             }

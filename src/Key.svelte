@@ -1,5 +1,5 @@
 <script>
-    import { actionstore } from './actionstore.js';
+    import { actionStore } from './actionstore.js';
     export let keyData = {};
     let focus = false;
     console.log("keyData = " + JSON.stringify(keyData));
@@ -10,7 +10,7 @@
         }
     }
     
-    const unsubscribe = actionstore.subscribe(keyAction => {
+    const unsubscribe = actionStore.subscribe(keyAction => {
         console.log("keydata " )
        focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
        if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
@@ -48,6 +48,9 @@
     .key.alt, .key.ctrl {
         width: 7%;
     }
+    .lh.right {
+        box-shadow: 4px 0px 1px red;
+    }
     .expected {
         background-image: url(/img/vizier.svg);
         background-position: 50% 30%;
@@ -56,11 +59,11 @@
     .bottom-k { height: 50%; width: 100%; vertical-align: bottom; }
     .top-k { height: 50%; width: 100%; vertical-align: baseline; }
 </style>
-<div class="key {keyData.special ? keyData.class : ''}" class:expected={focus}>
-    <div class="bottom-l">
-        {@html (keyData.keys[0] === ' ' || !keyData.keys[0] ? "&nbsp;" : keyData.keys[0])}
+   <div class="key {keyData.class ? keyData.class : ''}" class:expected={focus}>
+        <div class="bottom-l">
+            {@html (keyData.keys[0] === ' ' || !keyData.keys[0] ? "&nbsp;" : keyData.keys[0])}
+        </div>
+        <div class="bottom-k">
+            {@html keyData.keys[1] || "&nbsp;"}
+        </div>
     </div>
-    <div class="bottom-k">
-        {@html keyData.keys[1] || "&nbsp;"}
-    </div>
-</div>
