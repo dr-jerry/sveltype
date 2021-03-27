@@ -4,30 +4,26 @@
 	let courseText  = "";
 	let course = undefined;
 	function showCourse(evt) {
-	   course = evt.detail;
-	   
+	   course = evt.detail;	   
 	   courseText = course.course.course_text;
 	   console.log(JSON.stringify(course));
+	   statStore.update((ss) => ({}))
 	}
+
 	function handleType(evt) {
 		console.log("handle store " + $actionStore + " " + JSON.stringify($statStore));
 		if (course && $statStore.startTime) {
-
 			actionStore.update((as) => ({...as, ...{expected: courseText[0]
 				, "typed" : evt.key, focus: courseText[1] || "end" }}));
-			courseText = courseText.substr(1);
 			let now = new Date().getTime();
-			statStore.update((ss) => {
-				let delta = now - ss.lastTime;
-				console.log("stats " + JSON.stringify(ss));
-				let deltas = [...(ss[evt.key] || []), ...[delta]];
-				console.log("deltas " + JSON.stringify(deltas));
-			 	return {...ss, ...{lastTime: now, [evt.key]: deltas}};
-			})
-		} else if (course && evt.key === ' ') {
-			let now = new Date().getTime();
-			console.log("start time is " + now);
-			statStore.update((ss) => ({...ss, ...{startTime: now, lastTime: now}}));
+			if (courseText[0] === evt.key || course.ignoreError) {
+				courseText = courseText.substr(1);
+				statStore.hit(evt.key)
+			} else { // missed the key.
+				statStore.miss({typed: evt.key, missed: courseText[0]});
+			}
+		} else if (course && evt.key === ' ') { // start the course.
+			statStore.init()
 		}
 	}
 	import ConfigMenu from './ConfigMenu.svelte';

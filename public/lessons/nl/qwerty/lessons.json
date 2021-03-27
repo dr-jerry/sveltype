@@ -9,6 +9,7 @@
                 "name": "f-j",
                 "duration": "2",
                 "level": "easy",
+                "ignoreError" : true,
                 "line_length": 30,
                 "description": "Deze les leert je de \"padvinder toetsen\". Dit zijn de a,s,d,f,j,k,l en ;. De wijsvingers rusten op de f en j. Alle andere vingers zitten op toetsen ernaast (de pinken op de a en ;) Je leert nu de wijsvinger toetsen, het is belangrijk dat alle andere vingers op hun plaats blijven!.",
                 "course_text": "ff jj ff jj ff jj f j fj ggg hhh gf fg fg gf hj jh hhj jj hhh gg fj jj gg a; fff jj jjjj jjjh hfjfghj jhgf jfgh fjhg"
@@ -18,6 +19,7 @@
                 "name": "d-k",
                 "duration": "2",
                 "level": "easy",
+                "ignoreError" : true,
                 "line_length": 30,
                 "description": "We gaan nu verder met de middelvingers: de d en k. Wederom alle ander vingers op hun plaats. (de pinken op de a en ;, de ringvingers op de s en l, de middelvingers op de d en k, de wijsvingers op de f en j).",
                 "course_text": "ddd kkk dd kk ff g g f h hhh jjj kkkk dfghjk kjhgfd dghdlf dd ff jj ll lfl ldldl dllf flg hhjj lkjd jd jd jfgh ldfd  a;  jhgdf jfgdh fjhg"
@@ -27,6 +29,7 @@
                 "name": "s-l",
                 "duration": "2",
                 "level": "easy",
+                "ignoreError" : true,
                 "line_length": 30,
                 "description": "We gaan nu verder met de ringvingers: de d en k, best lastig. Alle vingers op hun plaats.",
                 "course_text": "ss ll ss ll d f s l s h jl l dd ll s sl ls ghjsd gg ss ll jjh lll dd ss ll lll sssll dd kdsss dsd lkl lkl klll lsss dfjk fjkl lll kll ss hg gh sdfghjkl lkjhgfds"
@@ -37,14 +40,15 @@
                 "duration": "2",
                 "level": "easy",
                 "line_length": 30,
+                "ignoreError" : true,
                 "description": "We gaan nu verder met de pinken: de a en ;. Alle vingers op hun plaats.",
                 "course_text": "aas saa ;; las; ;;; sla sjaal haag ghaa flag gal hallal sassl aas haas ;; hak; ;;kaas slaaf das ;; slag glas flaaag aaaa lak kal asdfghjkl; ;lkjhgfdsa ;; aa a"
             },
             {
                 "id": 5,
                 "name": "Word practice",
-                "duration":
-        "3",
+                "duration": "3",
+                "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
                 "description": "De padvinder toetsen hebben we gehad, we gaan verder met de toesten eronder en erboven. We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met je vinger terug naar de padvindertoetsen, anders worden ze koud. Eerst alleen de wijsvingers! v, f, r, t, g & b links. m, j, u, y, h en n rechts",

@@ -35,11 +35,11 @@
 }
 .contents {
   font-family: Typewriter, monospace;
-  font-size: 1.0em;
+  font-size: 1.5em;
 }
 .descript {
   text-align: left;
-   font-size: 1.5em;
+   font-size: 1.2em;
    padding-left: 2.5em;
 }
 </style>

@@ -21,31 +21,48 @@
 
 </script>
 <style>
-    .key{
+    .wrapper {
+        display: inline-block;
         width: 5%;
+    }
+    .key {
         margin:  0.313em;
         padding-bottom: 0.33em;
         border: 2px solid #999999;
         border-radius: 5px;
-        display: inline-block;
         height: 100%;
     }
-    .key.space{
+    .pink {
+        background-color: #ffb6c1;
+    }
+    .rf {
+        background-color: #eee8aa
+    }
+    .mf {
+        background-color: #e7d0b0;
+    }
+    .if {
+        background-color: #7fffd4;
+    }
+    .thum {
+        background-color: #a9a9a9;
+    }
+    .wrapper.space{
         width: 45%;
     }
-    .key.bksp, .key.tab {
+    .wrapper.bksp, .wrapper.tab {
         width: 8%;
     }
-    .key.caps {
-        width: 9%;
+    .wrapper.caps {
+        width: 7%;
     }
-    .key.enter {
-        width: 10%;
+    .wrapper.enter {
+        width: 8%;
     }
-    .key.shift {
-        width: 12%;
+    .wrapper.shift {
+        width: 8%;
     }
-    .key.alt, .key.ctrl {
+    .wrapper.alt, .wrapper.ctrl {
         width: 7%;
     }
     .lh.right {
@@ -59,6 +76,7 @@
     .bottom-k { height: 50%; width: 100%; vertical-align: bottom; }
     .top-k { height: 50%; width: 100%; vertical-align: baseline; }
 </style>
+<div class="wrapper {keyData.parentClass ? keyData.parentClass : 'niks'}">
    <div class="key {keyData.class ? keyData.class : ''}" class:expected={focus}>
         <div class="bottom-l">
             {@html (keyData.keys[0] === ' ' || !keyData.keys[0] ? "&nbsp;" : keyData.keys[0])}
@@ -67,3 +85,4 @@
             {@html keyData.keys[1] || "&nbsp;"}
         </div>
     </div>
+</div>

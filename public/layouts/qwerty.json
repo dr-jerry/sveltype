@@ -1,204 +1,288 @@
 [
         [{
-            "keys": ["~", "`"]
+            "keys": ["~", "`"],
+            "class": "pink",
+	    "parentClass": "top first lh top"
         }, {
-            "keys": ["!", "1"]
+            "keys": ["!", "1"],
+            "class": "pink",
+	    "parentClass": "top lh"
         }, {
-            "keys": ["@", "2"]
+            "keys": ["@", "2"] ,
+            "class": "rf",
+	    "parentClass": "top lh"
         }, {
-            "keys": ["#", "3"]
+            "keys": ["#", "3"],
+            "class": "lh mf",
+	    "parentClass": "top lh"
         }, {
-            "keys": ["$", "4"]
+            "keys": ["$", "4"],
+            "class": "if",
+	    "parentClass": "top lh"
         }, {
             "keys": ["%", "5"],
-            "class" : "lh right"
+            "class" : "if",
+	    "parentClass": "top lh"
         }, {
-            "keys": ["^", "6"]
+            "keys": ["^", "6"],
+            "class" : "if",
+	    "parentClass": "last top lh"
         }, {
-            "keys": ["&", "7"]
+            "keys": ["&", "7"],
+            "class" : "rh if",
+	    "parentClass": "top first"
         }, {
-            "keys": ["*", "8"]
+            "keys": ["*", "8"],
+            "class" : "rh mf",
+	    "parentClass": "top"
         }, {
-            "keys": ["(", "9"]
+            "keys": ["(", "9"],
+            "class" : "rh rf",
+	    "parentClass": "top"
         }, {
-            "keys": [")", "0"]
+            "keys": [")", "0"],
+            "class" : "rh pink",
+	    "parentClass": "top"
         }, {
-            "keys": ["_", "-"]
+            "keys": ["_", "-"],
+            "class" : "rh pink",
+	    "parentClass": "top"
         }, {
-            "keys": ["+", "="]
+            "keys": ["+", "="],
+            "class" : "rh pink",
+	    "parentClass": "top"
         }, {
             
-            "class": "bksp",
+            "class": "rh pink",
+	    "parentClass": "top bksp",
             "keys": ["Bksp", ""]
         }],[
             {
                 
-                "class": "tab",
+                "class": "pink",
+		"parentClass": "top tab lh",
                 "keys": ["Tab", ""]
             },
 
             {
-                "keys": ["Q", ""]
+                "keys": ["Q", ""],
+		"class": "pink"
             },
 
             {
-                "keys": ["W", ""]
+                "keys": ["W", ""],
+		"class": "lh rf"
             },
 
             {
-                "keys": ["E", ""]
+                "keys": ["E", ""],
+		"class": "lh mf"
             },
 
             {
-                "keys": ["R", ""]
+                "keys": ["R", ""],
+		"class": "lh if"
             },
 
             {
                 "keys": ["T", ""],
-                "class" : "lh right"
+                "class" : "lh last if"
             },
 
             {
-                "keys": ["Y", ""]
+                "keys": ["Y", ""],
+		"class": "rh if",
+		"parentClass": "first lh"
             },
 
             {
-                "keys": ["U", ""]
+                "keys": ["U", ""],
+		"class": "rh if"
             },
 
             {
-                "keys": ["I", ""]
+                "keys": ["I", ""],
+		"class": "rh mf"
             },
 
             {
-                "keys": ["O", ""]
+                "keys": ["O", ""],
+		"class": "rh rf"
             },
 
             {
-                "keys": ["P", ""]
+                "keys": ["P", ""],
+		"class": "rh pink"
             },
 
             {
-                "keys": ["{", "["]
+                "keys": ["{", "["],
+		"class": "rh pink"
             },
 
             {
-                "keys": ["}", "]"]
+                "keys": ["}", "]"],
+		"class": "rh pink"
             },
 
             {
-                "keys": ["|", "\\"]
+                "keys": ["|", "\\"],
+		"class": "rh pink"
             }
 
         ], [
 
             {
                 
-                "class": "caps",
+                "class": "pink",
+		"parentClass": "lh first caps",
                 "keys": ["Caps", ""]
             },
 
             {
-                "keys": ["A", ""]
+                "keys": ["A", ""],
+		"class": "pink",
+		"parentClass": "lh"
             },
 
             {
-                "keys": ["S", ""]
+                "keys": ["S", ""],
+		"class": "rf",
+		"parentClass": "lh"
             },
 
             {
-                "keys": ["D", ""]
+                "keys": ["D", ""],
+		"class": "lh mf",
+		"parentClass": "lh"		
             },
 
             {
-                "keys": ["F", ""]
+                "keys": ["F", ""],
+		"class": "if",
+		"parentClass": "lh"		
             },
 
             {
                 "keys": ["G", ""],
-                "class" : "lh right"
+		"class": "if",
+		"parentClass": "lh last"
             },
 
             {
-                "keys": ["H", ""]
+                "keys": ["H", ""],
+		"class": "rh if",
+		"parentClass": "lh first"
             },
 
             {
-                "keys": ["J", ""]
+                "keys": ["J", ""],
+		"class": "if",
+		"parentClass": "rh"
             },
 
             {
-                "keys": ["K", ""]
+                "keys": ["K", ""],
+		"class": "mf",
+		"parentClass": "rh"
             },
 
             {
-                "keys": ["L", ""]
+                "keys": ["L", ""],
+		"class": "rf",
+		"parentClass": "rh"		
             },
 
             {
-                "keys": [":", ";"]
+                "keys": [":", ";"],
+		"class": "pink",
+		"parentClass": "rh"		
             },
 
             {
-                "keys": ["\"", "'"]
+                "keys": ["\"", "'"],
+		"class": "pink",
+		"parentClass": "rh"		
             },
 
             {
                 
-                "class": "enter",
+                "class": "pink",
+		"parentClass": "enter last rh",
                 "keys": ["Enter", ""]
             }
         ], [
             {
                 
-                "class": "shift_left",
+                "class": "pink",
+		"parentClass": "shift lh first",
                 "keys": ["Shift", ""]
             },
 
             {
-                "keys": ["Z", ""]
+                "keys": ["Z", ""],
+		"class": "pink",
+		"parentClass": "lh"
             },
 
             {
-                "keys": ["X", ""]
+                "keys": ["X", ""],
+		"class": "rf",
+		"parentClass": "lh"
             },
 
             {
-                "keys": ["C", ""]
+                "keys": ["C", ""],
+		"class": "mf",
+		"parentClass": "lh"
             },
 
             {
-                "keys": ["V", ""]
+                "keys": ["V", ""],
+		"class": "if",
+		"parentClass": "lh"
             },
 
             {
                 "keys": ["B", ""],
-                "class" : "lh right"
+                "class" : "last if",
+		"parentClass": "lh"
             },
 
             {
-                "keys": ["N", ""]
+                "keys": ["N", ""],
+		"class": "if",
+		"parentClass": "rh first"
             },
 
             {
-                "keys": ["M", ""]
+                "keys": ["M", ""],
+		"class": "if",
+		"parentClass": "rh"
             },
 
             {
-                "keys": ["<", ","]
+                "keys": ["<", ","],
+		"class": "mf",
+		"parentClass": "rh"		
             },
 
             {
-                "keys": [">", "."]
+                "keys": [">", "."],
+		"class": "rf",
+		"parentClass": "rh"		
             },
 
             {
-                "keys": ["?", "\/"]
+                "keys": ["?", "\/"],
+		"class": "pink",
+		"parentClass": "rh"		
             },
 
             {
                 
-                "class": "shift_right",
+                "class": "pink",
+		"parentClass": "last shift rh",
                 "keys": ["Shift", ""]
             }
 
@@ -206,31 +290,36 @@
 
             {
                 
-                "class": "ctrl_left",
+                "class": "pink",
+		"parentClass" : "ctrl_left lh first",
                 "keys": ["Ctrl", ""]
             },
 
             {
                 
-                "class": "alt_left",
-                "keys": ["Alt", ""]
+                "class": "pink",
+                "keys": ["Alt", ""],
+		"parentClass": "alt_left lh pink"
             },
 
             {
                 
-                "class": "space",
+                "class": "thumb",
+		"parentClass" : "space lh rh first last",
                 "keys": [" ", ""]
             },
 
             {
                 
-                "class": "ctrl_right",
+                "class": "rf",
+		"parentClass": "ctrl_right rh",
                 "keys": ["Ctrl", ""]
             },
 
             {
                 
-                "class": "alt_right",
+                "class": "pink",
+		"parentClass": "alt_right rh last bottom",
                 "keys": ["Alt", ""]
             }
         ]

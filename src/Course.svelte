@@ -1,5 +1,6 @@
 <script>
   import Row from "./Row.svelte";
+  import Statter from "./Statter.svelte";
   export let theCourse;
   export let courseText;
   let theLayout = [];
@@ -16,7 +17,9 @@
     <p class="waiting">...Waiting</p>
   {:then rows}
     <div class="type input text">
-      <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}</div>
+      <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}
+      <Statter/>
+    </div>
     {#each rows as row}
       <Row rowData={row}/>
     {/each}
