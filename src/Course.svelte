@@ -39,10 +39,10 @@
   }
   .input {
     white-space: nowrap;
-    width: 100%;
+    width: 79%;
     font-family: Typewriter;
     font-size: 2.2em;
-    height: 2.2em;
+    height: 3.2em;
     margin: 0.3em;
     padding: 0.1em;
     padding-left: 0.4em;
