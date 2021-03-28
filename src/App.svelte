@@ -3,11 +3,10 @@
 	let configs = [{id: "en/qwerty", txt : "English / Qwerty"}, {id: "nl/qwerty", txt: "Nederlands / Qwerty"}];
 	let courseText  = "";
 	let course = undefined;
-	function showCourse(evt) {
-	   course = evt.detail;	   
+	function showCourse(evt) {	   course = evt.detail;	   
 	   courseText = course.course.course_text;
 	   console.log(JSON.stringify(course));
-	   statStore.update((ss) => ({}))
+	   statStore.reset();
 	}
 
 	function handleType(evt) {

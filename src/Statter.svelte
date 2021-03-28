@@ -1,5 +1,5 @@
 <script>
-    import {statStore} from './actionstore.js';
+    import { statStore, errors, velocity } from './actionstore.js';
     let wrongScore = 10;
     let jsonStats
     const unsubscribe = statStore.subscribe(stats => {
@@ -12,5 +12,5 @@
 <style>
  </style>
 <div class="wrapper">
-    {jsonStats}
+    speed: {$velocity} errors: {$errors} 
  </div>
