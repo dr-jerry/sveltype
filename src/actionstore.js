@@ -64,7 +64,10 @@ export const velocity = derived (
     $statStore => {
         let velo = $statStore.velocity;
         let n = velo.length;
- 
-        return (1000 * (n+1) * n / 2 / velo.filter(v => v > 0).reduce((acc,head,i) => head*(n-i)+acc, 0)).toFixed(2)
+        console.log("velo " + n);
+        if (n > 1) 
+            return (1000 * (n+1) * n / 2 / velo.filter(v => v > 0).reduce((acc,head,i) => head*(n-i)+acc, 0)).toFixed(2)
+        else
+            return 0
     }
 );
