@@ -10,15 +10,20 @@
   );
 </script>
 
-<div class="course description">
-  {theCourse.course.description}
-</div>
-<div class="course keyboard">
+<div class="course">
+  <div class="description">
+  {#if typeof theCourse.course.description === 'string' }
+    {@html theCourse.course.description}
+  {:else}
+    {@html theCourse.course.description.join('')}
+  {/if}
+ </div>
+ <div class="keyboard">
   {#await theLayout}
     <p class="waiting">...Waiting</p>
   {:then rows}
     <div class="type input text">
-      <div class="gauge"><Gauge speed={$velocity/5} errors={$errors/20}/></div>
+      <div class="gauge"><Gauge speed={$velocity/8} errors={$errors/20}/></div>
         <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}
     </div>
     {#each rows as row}
@@ -26,7 +31,9 @@
     {/each}
   {:catch error}<p>error{error.message}</p>
   {/await}
+  </div>
 </div>
+
 
 <style>
   .focus {
@@ -34,23 +41,30 @@
       background-color: #CC44BB;
       border-bottom: 2px solid #CC4444;
   }
-  .course.description {
-    width: 30em;
-    margin: 0 auto;
+  .course {
+    width: 85%;
+    font-family: TypeWriter;
+  }
+  .course .description {
+    font-size: 1.9em;
+    text-align: left;
   }
   .gauge {
+    float: left;
     display: inline-block;
     width: 3em;
     height: 3em;
   }
   .input {
     white-space: nowrap;
-    width: 79%;
     font-family: Typewriter;
     font-size: 2.2em;
     height: 3.2em;
-    margin: 0.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     padding: 0.1em;
+    padding-top: 0.6em;
+    padding-bottom:0.6em;
     padding-left: 0.4em;
     border: 1px black solid;
     border-radius: 6pt;

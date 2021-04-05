@@ -4,11 +4,6 @@
     let focus = false;
     console.log("keyData = " + JSON.stringify(keyData));
     export const stats = {}
-    function keyClick (key) {
-        if (key.clicked == keyData.key) {
-            console.log('klick' + JSON.stringify(key))
-        }
-    }
     
     const unsubscribe = actionStore.subscribe(keyAction => {
         console.log("keydata " )
@@ -23,7 +18,7 @@
 <style>
     .wrapper {
         display: inline-block;
-        width: 5%;
+        width: 7%;
     }
     .key {
         margin:  0.313em;
@@ -46,6 +41,9 @@
     }
     .thum {
         background-color: #a9a9a9;
+    }
+    .lh {
+        background-color: #ffeeee;
     }
     .wrapper.space{
         width: 45%;

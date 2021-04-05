@@ -1,13 +1,13 @@
 <script>
 	export let speed;
     export let errors;
-	export let radius=30;
+	export let radius=50;
     let delta, point, pointr;
     const deltaR = -10;
 	$: point = calculateDelta(1/6, speed, errors, radius);
 
 
-    let calculateM = (d,f) => `${40-d*Math.cos(f*Math.PI)} ${90 + d* Math.sin(Math.PI * f)}`;
+    let calculateM = (d,f) => `${20-d*Math.cos(f*Math.PI)} ${70 + d* Math.sin(Math.PI * f)}`;
 	function calculateDelta(a0, a1, errors, rad) {
         console.log("velo in gauge is " + a1);
 		let ang0 = 2* a0 * Math.PI;

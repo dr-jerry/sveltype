@@ -26,35 +26,35 @@
         }, {
             "keys": ["^", "6"],
             "class" : "if",
-	    "parentClass": "last top lh"
+	    "parentClass": "last top rh"
         }, {
             "keys": ["&", "7"],
-            "class" : "rh if",
-	    "parentClass": "top first"
+            "class" : "if",
+	    "parentClass": "rh top first"
         }, {
             "keys": ["*", "8"],
-            "class" : "rh mf",
-	    "parentClass": "top"
+            "class" : "mf",
+	    "parentClass": "rh top"
         }, {
             "keys": ["(", "9"],
-            "class" : "rh rf",
-	    "parentClass": "top"
+            "class" : "rf",
+	    "parentClass": "rh top"
         }, {
             "keys": [")", "0"],
-            "class" : "rh pink",
-	    "parentClass": "top"
+            "class" : "pink",
+	    "parentClass": "rh top"
         }, {
             "keys": ["_", "-"],
-            "class" : "rh pink",
-	    "parentClass": "top"
+            "class" : "pink",
+	    "parentClass": "rh top"
         }, {
             "keys": ["+", "="],
-            "class" : "rh pink",
-	    "parentClass": "top"
+            "class" : "pink",
+	    "parentClass": "rh top"
         }, {
             
-            "class": "rh pink",
-	    "parentClass": "top bksp",
+            "class": "pink",
+	    "parentClass": "rh top bksp",
             "keys": ["Bksp", ""]
         }],[
             {
@@ -66,68 +66,79 @@
 
             {
                 "keys": ["Q", ""],
-		"class": "pink"
+		"class": "pink",
+        "parentClass": "lf"
             },
 
             {
                 "keys": ["W", ""],
-		"class": "lh rf"
+		"class": " rf",
+        "parentClass": "lh"
             },
 
             {
                 "keys": ["E", ""],
-		"class": "lh mf"
+		"class": "mf",
+        "parentClass": "lh"
             },
-
             {
                 "keys": ["R", ""],
-		"class": "lh if"
+        		"class": "if",
+                "parentClass": "lh"
             },
 
             {
                 "keys": ["T", ""],
-                "class" : "lh last if"
+                "class" : "last if",
+                "parentClass": "lh"
             },
 
             {
                 "keys": ["Y", ""],
-		"class": "rh if",
-		"parentClass": "first lh"
+		"class": "if",
+		"parentClass": "first rh"
             },
 
             {
                 "keys": ["U", ""],
-		"class": "rh if"
+		"class": "if",
+		"parentClass": "rh"
             },
 
             {
                 "keys": ["I", ""],
-		"class": "rh mf"
+		"class": "mf",
+		"parentClass": "rh"
             },
 
             {
                 "keys": ["O", ""],
-		"class": "rh rf"
+		"class": "rf",
+		"parentClass": "rh"
             },
 
             {
                 "keys": ["P", ""],
-		"class": "rh pink"
+		"class": "pink",
+		"parentClass": "rh"
             },
 
             {
                 "keys": ["{", "["],
-		"class": "rh pink"
+		"class": "pink",
+		"parentClass": "rh"
             },
 
             {
                 "keys": ["}", "]"],
-		"class": "rh pink"
+		"class": "pink",
+		"parentClass": "rh"
             },
 
             {
                 "keys": ["|", "\\"],
-		"class": "rh pink"
+		"class": "pink",
+		"parentClass": "rh"
             }
 
         ], [
@@ -171,8 +182,8 @@
 
             {
                 "keys": ["H", ""],
-		"class": "rh if",
-		"parentClass": "lh first"
+		"class": "if",
+		"parentClass": "rh first"
             },
 
             {
@@ -299,7 +310,7 @@
                 
                 "class": "pink",
                 "keys": ["Alt", ""],
-		"parentClass": "alt_left lh pink"
+		"parentClass": "alt_left lh"
             },
 
             {

@@ -11,7 +11,12 @@
                 "level": "easy",
                 "ignoreError" : true,
                 "line_length": 30,
-                "description": "Deze les leert je de \"padvinder toetsen\". Dit zijn de a,s,d,f,j,k,l en ;. De wijsvingers rusten op de f en j. Alle andere vingers zitten op toetsen ernaast (de pinken op de a en ;) Je leert nu de wijsvinger toetsen, het is belangrijk dat alle andere vingers op hun plaats blijven!.",
+                "description": ["Deze les leert je de \"padvinder toetsen\". Dit zijn de a,s,d,f,j,k,l en ;."
+                    , " De wijsvingers rusten op de f en j. Alle andere vingers zitten op toetsen ernaast (de pinken"
+                    , " op de a en ;) Je leert in dit eerste onderdeel de spatie en de toetsen van de wijsvinger, de f & g"
+                    , " voor de linkerhand, de h en j voor de rechterhand. De wijsvingertoetsen op het toetsenbord hieronder zijn mintkleurig.<br>"
+                    , " De spatie is voor een van de duimen. Het is belangrijk dat alle andere vingers"
+                    , " op hun plaats blijven!.<br> Zet je vingers goed en druk met een duim op de spatie!"],
                 "course_text": "ff jj ff jj ff jj f j fj ggg hhh gf fg fg gf hj jh hhj jj hhh gg fj jj gg a; fff jj jjjj jjjh hfjfghj jhgf jfgh fjhg"
             },
             {
@@ -21,7 +26,7 @@
                 "level": "easy",
                 "ignoreError" : true,
                 "line_length": 30,
-                "description": "We gaan nu verder met de middelvingers: de d en k. Wederom alle ander vingers op hun plaats. (de pinken op de a en ;, de ringvingers op de s en l, de middelvingers op de d en k, de wijsvingers op de f en j).",
+                "description": "We gaan nu verder met de middelvingers: de d en k. Wederom alle andere vingers op hun plaats. (de pinken op de a en ;, de ringvingers op de s en l, de middelvingers op de d en k, de wijsvingers op de f en j).",
                 "course_text": "ddd kkk dd kk ff g g f h hhh jjj kkkk dfghjk kjhgfd dghdlf dd ff jj ll lfl ldldl dllf flg hhjj lkjd jd jd jfgh ldfd  a;  jhgdf jfgdh fjhg"
             },
             {
