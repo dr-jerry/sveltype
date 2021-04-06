@@ -1,7 +1,7 @@
 <script>
 	export let speed;
     export let errors;
-	export let radius=50;
+	export let radius=40;
     let delta, point, pointr;
     const deltaR = -10;
 	$: point = calculateDelta(1/6, speed, errors, radius);

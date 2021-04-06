@@ -1,17 +1,19 @@
 <script>
   import Row from "./Row.svelte";
-  import { statStore, errors, velocity } from './actionstore.js';
+  import { courseLive, statStore, errors, velocity } from './actionstore.js';
   import Gauge from "./Gauge.svelte";
   export let theCourse;
   export let courseText;
   let theLayout = [];
+  
   fetch("layouts/" + theCourse.layout + ".json").then(
     (resp) => (theLayout = resp.json())
   );
+
 </script>
 
 <div class="course">
-  <div class="description">
+  <div class="description" style="--description-height: {$courseLive ? 2 : 9}em">
   {#if typeof theCourse.course.description === 'string' }
     {@html theCourse.course.description}
   {:else}
@@ -44,10 +46,15 @@
   .course {
     width: 85%;
     font-family: TypeWriter;
+    overflow: hidden
   }
   .course .description {
     font-size: 1.9em;
     text-align: left;
+    max-height: var(--description-height);
+    overflow-y: scroll;
+    transition-property: max-height;
+    transition-duration: 1.5s;
   }
   .gauge {
     float: left;

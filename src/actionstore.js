@@ -24,7 +24,11 @@ function createStats() {
         }),
         init: () => update(stats => {
             let now = new Date().getTime();
-            return {...stats, startTime: now, lastTime: now}
+            return {...stats, startTime: now, lastTime: now, endTime: 0}
+        }),
+        stop: () => update(stats => {
+            let now = new Date().getTime();
+            return {...stats, endTime: now}
         }),
 		reset: () => set(initMap)
 	};
@@ -69,5 +73,14 @@ export const velocity = derived (
             return (1000 * (n+1) * n / 2 / velo.filter(v => v > 0).reduce((acc,head,i) => head*(n-i)+acc, 0)).toFixed(2)
         else
             return 0
+    }
+);
+export const courseLive = derived (
+    statStore,
+    $statStore => {
+        let result = $statStore.startTime > 0 && $statStore.endTime == 0;
+        console.log(`${$statStore.startTime}  course is ${result ? " very " : "not"} alive`);
+        return (result)
+
     }
 );
