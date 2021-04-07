@@ -9,5 +9,5 @@ For setup please refer to [Svelte](https://svelte.dev) apps and  https://github.
 
 I'ts alive under http://www.dijkmeijer.com<br/>
 
-This project is inspired by [Hotcold] (https://github.com/palerdot/hotcold) but tries be modular.  
+This project is inspired by [Hotcold](https://github.com/palerdot/hotcold) but tries be modular.  
 Sveltype is my first Svelte project, so please be kind the chosen solution is "sub optimal".
