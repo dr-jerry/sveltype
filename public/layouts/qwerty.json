@@ -13,7 +13,7 @@
 	    "parentClass": "top lh"
         }, {
             "keys": ["#", "3"],
-            "class": "lh mf",
+            "class": "mf",
 	    "parentClass": "top lh"
         }, {
             "keys": ["$", "4"],
@@ -72,7 +72,7 @@
 
             {
                 "keys": ["W", ""],
-		"class": " rf",
+		"class": "rf",
         "parentClass": "lh"
             },
 
@@ -164,7 +164,7 @@
 
             {
                 "keys": ["D", ""],
-		"class": "lh mf",
+		"class": "mf",
 		"parentClass": "lh"		
             },
 
