@@ -3,9 +3,11 @@
    const dispatch = createEventDispatcher();
    
    export let configs;
+   export let selected;
    let lessons = [];
    let config = configs[0].id
-   $: fetch("/lessons/" + config + "/lessons.json").then(resp => lessons = resp.json());
+   $: fetch("/lessons/" + config + "/lessons.json", {cache: "no-cache"})
+      .then(resp => lessons = resp.json());
    
    let choosen='';
 </script>
@@ -42,6 +44,14 @@
    font-size: 1.2em;
    padding-left: 2.5em;
 }
+
+.selected::before {
+  content: ">";
+  }
+  .selected::after {
+    content: "<"
+  }
+
 </style>
  <div class="space">
  <div class="label input">Language &amp; Layout</div><div class="select input"><select bind:value={config}>
@@ -62,7 +72,7 @@
 {#if item.row_id === choosen}
 {#each item.courses as course}
 <div class="detail">
-<div class="descript" on:click={(e) => dispatch('showCourse', {"course": course, "layout": config.substring(config.indexOf("\/")+1)})}>{course.name}</div>
+<div class="descript" class:selected={selected===course.name} on:click={(e) => dispatch('showCourse', {"course": course, "layout": config.substring(config.indexOf("\/")+1)})}>{course.name}</div>
 </div>
 {/each}
 {/if}

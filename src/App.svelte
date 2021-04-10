@@ -3,10 +3,13 @@
 	let configs = [{id: "en/qwerty", txt : "English / Qwerty"}, {id: "nl/qwerty", txt: "Nederlands / Qwerty"}];
 	let courseText  = "";
 	let course = undefined;
-	function showCourse(evt) {	   course = evt.detail;	   
-	   courseText = course.course.course_text;
-	   console.log(JSON.stringify(course));
-	   statStore.reset();
+	let courseName = "";
+	function showCourse(evt) {	   
+		course = evt.detail;	   
+	   	courseText = course.course.course_text;
+		courseName = course.course.name;
+	   	console.log(JSON.stringify(course));
+	   	statStore.reset();
 	}
 
 	function handleType(evt) {
@@ -33,11 +36,11 @@
 <main>
 	<h1>Learn Touch Typing</h1>
 	<p>Build with Svelte</p>
-	<div class="nav"><ConfigMenu configs={configs} on:showCourse={showCourse}/></div>
+	<div class="nav"><ConfigMenu configs={configs} selected={courseName} on:showCourse={showCourse}/></div>
 	{#if course}
   	   <div class="play ground">
 	     <Course theCourse={course} courseText={courseText}></Course>
-	   </div>
+	   </div>	
 	{/if}
 </main>
 
