@@ -4,12 +4,13 @@
   import Gauge from "./Gauge.svelte";
   export let theCourse;
   export let courseText;
+  let wordText = "";
+  let wordList = [];
   let theLayout = [];
   
   fetch("layouts/" + theCourse.layout + ".json").then(
     (resp) => (theLayout = resp.json())
   );
-
 </script>
 
 <div class="course">
@@ -34,7 +35,7 @@
   {:catch error}<p>error{error.message}</p>
   {/await}
   </div>
-</div>
+  </div>
 
 
 <style>

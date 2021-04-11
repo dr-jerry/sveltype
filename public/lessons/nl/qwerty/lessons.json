@@ -80,10 +80,43 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "Verder met de gele ringvingers, w en o voor respectivelijk links en rechts.",
-                "course_text": "www ooo wo wo ow wo woo wwwo wwoow wow wowoow  aureoolaartshertog adelaarsoog dadeloos  tijdeloos feestdosdruiloor frietkot gekieskauwd gladiator helderrood illusieloos illustrator kaasklok kaketoe kletsoor kleurdoos kruisdood kurkdroog lasershows regisseursrol staalgrauwe staalwol straatgoot straatriool talkshows tijgerkooi tutor"
+                "course_text": "www ooo wo wo ow wo woo wwwo wwoow wow wowoow wrok wot wouter douwe hoogkwalitatief doodswade doorweefde gehoorweg geitouw herstelsoftware hertrouw autowasstraat koekwaus touwslager strooiweides strowis studiowerk stukadoorswerk stuurtouw isolatiewaarde flodderwerk geloofsgeweld gootwater hijstouw hoofdwal hoofdwas hoofdwedstrijd"
+            },
+            {
+                "id": 5,
+                "name": "wo",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": "De roze pink. De q en p. Weinig woorden met q in het Nederlands, dus ook wat engelse, latijnse en fantasie woorden.",
+                "course_text": "ppp qqqq pqpq qq pp pp qq pp pqqpqpp pqpq pq arequipa arequipa eqpt equips equipt qoph quiapo quipo quips quipu reequips reequipt piqu spqr adapa adapt addressograph addressograph adelops adeps adept adopt aegilops aeolotropy aerograph aerohydrotherapy aerope aerotherapy afips afterdrops afterhope aqape aggappe dequeue derequisitio detraque square diquat adequaat aequo quoterig"
+            }]},
+            {
+        
+                "name": "Benedenrij", 
+                "courses": [ {
+                "id": 5,
+                "name": "vbn",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": ["De bovenrij met de klinkers we gehad, we gaan verder met de benedenrij. We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met"
+                    , "je vinger terug naar de padvindertoetsen. De toesten onder de padvinders zijn wat lastiger. Eerst alleen de (mintkleurige) wijsvingers! v, b, n. De m komt bij de volgende"
+                    , "ronde. Let goed op dat je de b met je linkerhand typt!"]
+                ,"course_text":  "vvv bbbb nnnn vbn nbv nnbbvv bnnv vbbn nnnvvb nvbb bv nv nv bv bn bn ban van man munt beamen boekenprijsvraag botenverhuur brandverf buitenvoeler bureauniveau burenoverlast boekenprijsvraag botenverhuur brandverf buitenvoeler bureauniveau burenoverlast teddyberenvoorraad uitbreidingsvraag aanbeval afwijkingsbevoegdheid dienstbevel dunbevolkt dwangbevel flaneerboulevard fouilleringsbevoegdheid nablijver honkbalveld nestbevuiler onderbuikgevoel ontbijtservies opsporingsbevel regenboogvlag sluitingsbevel strandboulevard"
+            },
+            {
+                "id": 5,
+                "name": "zxcm",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": "De laatste letters, van alles wat. De roze pink, x voor de wijsvinger, de c voor de linker middelvinger en de m voor de rechter wijsvinger. Success",
+                "course_text": "zzzz xxxx cccc mmmmm zzzz zmxc cxmz zmxc ccc xxx cx xc mx xm zm mz zzzzz zzmmxxcc ccc cm mc cm qqqq pqpq qq pp pp qq pp pqqpqpp pqpq pq  aaibaarheidsfactor Aaigem aalbessenjam index aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters zakkoordenschema alimentatiezaak lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide kazernecomplex knechtschap kazim kluizencomplex paleizencomplex"
             }
-
-
         ]
     }
 ]
