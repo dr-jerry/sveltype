@@ -16,8 +16,8 @@
                     , " op de a en ;) Je leert in dit eerste onderdeel de spatie en de toetsen van de wijsvinger, de f & g"
                     , " voor de linkerhand, de h en j voor de rechterhand. De wijsvingertoetsen op het toetsenbord hieronderzijn mintkleurig.<br>"
                     , " De spatie is voor een van de duimen. Het is belangrijk dat alle andere vingers"
-                    , " op hun plaats blijven!.<br> Zet je vingers goed en druk met een duim op de spatie!"],
-                "course_text": "ff jj ff jj ff jj f j fj ggg hhh gf fg fg gf hj jh hhj jj hhh gg fj jj gg a; fff jj jjjj jjjh hfjfghj jhgf jfgh fjhg"
+                    , " op hun plaats blijven!.<br> Wanneer je de g of de h met je wijsvingers hebt getypts, zet je ze snel weer op f en j.<br> Zet je vingers goed en druk met een duim op de spatie!"],
+                "course_text": "ff jj ff jj ff jj f j fj gfgfgf hhh gf fg fg gf hj jh hjhj jj hjhhj ggf fj jj ggf a; fff jj jjjj jjjh hfjfghj jhgf jfgh fjhg hjhjhj gfgfgfgf hj gf hj gf fgf jhj jh hj fg gf gf gfgffggf hhj jjhj"
             },
             {
                 "id": 2,
@@ -26,7 +26,7 @@
                 "level": "easy",
                 "ignoreError" : true,
                 "line_length": 30,
-                "description": "We gaan nu verder met de middelvingers: de d en k. De bruine toetsen. Wederom alle andere vingers op hun plaats. (de pinken op de a en ;, de ringvingers op de s en l, de middelvingers op de d en k, de wijsvingers op de f en j).",
+                "description": "We gaan nu verder met de middelvingers: de d en k. De bruine toetsen. Wederom alle andere vingers op hun plaats. (de pinken op de a en ;, de ringvingers op de s en l, de middelvingers op de d en k, de wijsvingers op de f en j).<br> Staan ze goed? druk dan weer met je lievelingsduim op de spatie.",
                 "course_text": "ddd kkk dd kk ff g g f h hhh jjj kkkk dfghjk kjhgfd dghdlf dd ff jj ll lfl ldldl dllf flg hhjj lkjd jd jd jfgh ldfd  a;  jhgdf jfgdh fjhg"
             }, {
                 "id": 3,
@@ -35,7 +35,7 @@
                 "level": "easy",
                 "ignoreError" : true,
                 "line_length": 30,
-                "description": "De ringvinger is aan de beurt, dit zijn de gele toetsen. Nu doen we alleen de d en k op de padvinders rij. Alle vingers op hun plaats.",
+                "description": "De ringvinger is aan de beurt, dit zijn de gele toetsen. Nu doen we alleen de d en k op de padvinders rij. Alle vingers op hun plaats. <br> Heel officieel moet je, wanneer je de spatie typt de hand gebruiken die <u>niet</u> de laatste letter heeft getypt. Maar als je je hier niet aan houdt kun je nog steeds slagen voor je typediploma en in het leven.<br/>Kies een duim en type de spatie in om te beginnen.",
                 "course_text": "ss ll ss ll d f s l s h jl l dd ll s sl ls ghjsd gg ss ll jjh lll dd ss ll lll sssll dd kdsss dsd lkl lkl klll lsss dfjk fjkl lll kll ss hg gh sdfghjkl lkjhgfds"
             },
             {
@@ -50,8 +50,7 @@
             }]},
             {
         
-                "name": "bovenrij", 
-                "row_id": "qwerty-capital-letters",
+                "name": "Bovenrij", 
                 "courses": [ {
                 "id": 5,
                 "name": "uyrt",
@@ -60,7 +59,7 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "De padvinder toetsen hebben we gehad, we gaan verder met de toesten erboven. We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met je vinger terug naar de padvindertoetsen, anders worden ze koud. Eerst alleen de (mintkleurige) wijsvingers! r, t, y en u",
-                "course_text": "rfrfrfrf rf ttt t yjyjyj yj yjyjyjyj ujujuj uj rut ruyt rf tftftf rutty urty yurt jytru yrtu yjyjyj uj uj ujujujuj jyurtyuy hurty furty farty jaryj larty kurty kaurty saurty suarty laus lyssal rujyt duurty yduur suduur yguur durururs luyrtuy ughtyr rygur fygur fluff flaf yrska karskur hurk yghals haulshak lakyus kaasy lykagfh halytr"
+                "course_text": "rfrfrfrf rf tftftf tf yjyjyj yj yjyjyjyj ujujuj uj rftfrftf yjujujyjujuj rf rf rut rfuj ruyt rf tftftf rutty urty yurt jytru yrtu yjyjyj uj uj ujujujuj jyurtyuy hurty furty farty jaryj larty kurty kaurty saurty suarty laus lyssal rujyt duurty yduur suduur yguur durururs luyrtuy ughtyr rygur fygur fluff flaf tftftf rfrf tfujyj rft rfrrf tftftt yrska karskur hurk yghals haulshak lakyus kaasy lykagfh halytr"
             },
             {
                 "id": 5,
@@ -80,7 +79,7 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "Verder met de gele ringvingers, w en o voor respectivelijk links en rechts.",
-                "course_text": "wswsws ololol wso wso olws wso wsolo wswswso wswsolow wsolw wsowsoow wrok wot wouter douwe hoogkwalitatief wswswsws ws wswsws ws oloololool doodswade doorweefde gehoorweg geitouw herstelsoftware hertrouw autowasstraat koekwaus touwslager strooiweides strowis studiowerk stukadoorswerk stuurtouw isolatiewaarde flodderwerk geloofsgeweld gootwater hijstouw hoofdwal hoofdwas hoofdwedstrijd"
+                "course_text": "wswsws ololol wsol wsol olws wso wsolo wswswso wswsolow wsolw wsowsoow wrok wot wouter douwe hoogkwalitatief wswswsws ws wswsws ws oloololool doodswade doorweefde gehoorweg geitouw herstelsoftware hertrouw autowasstraat koekwaus touwslager strooiweides strowis studiowerk stukadoorswerk stuurtouw isolatiewaarde flodderwerk olololoololololo geloofsgeweld gootwater hijstouw hoofdwal hoofdwas hoofdwedstrijd"
             },
             {
                 "id": 5,
@@ -89,12 +88,12 @@
                 "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
-                "description": "De roze pink. De q en p. Weinig woorden met q in het Nederlands, dus ook wat engelse, latijnse en fantasie woorden.",
+                "description": "De roze pink. De q en p. Weinig woorden met q in het Nederlands, dus ook wat engelse, latijnse en fantasie woorden.  Je hebt misschien al \"qwerty\" gezien, dit geeft aan dat het toetsenbord begint met qwerty. Er zijn ook toetsenborden (in Frankrijk bijvoorbeeld) die met azerty beginnen. Er zijn ook toetsenborden met een compleet andere indeling: Dvorak of Colemak. De naam komt van de uitvinders, niet van indeling zoals bij qwerty of azerty toetsenborden.",
                 "course_text": "p;p;p; qaqaqaq p;qap;q qaqa p;p p;p qqa p;p pqaqapqapp pqpq p;q arequipa arequipa eqpt equips equipt qoph quiapo quipo quips quipu reequips pppp;p;p;p; p; p; p;p reequipt piqu spqr adapa adapt addressograph addressograph adelops qaqaqaqaqqa qqa p;p;pp adeps adept adopt aegilops aeolotropy aerograph aerohydrotherapy aerope aerotherapy afips afterdrops afterhope aqape aggappe dequeue derequisitio detraque square diquat adequaat aequo quoterig"
             }]},
             {
         
-                "name": "Benedenrij", 
+                "name": "Benedenrij",
                 "courses": [ {
                 "id": 5,
                 "name": "vbn",
@@ -105,7 +104,7 @@
                 "description": ["De bovenrij met de klinkers we gehad, we gaan verder met de benedenrij. We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met"
                     , "je vinger terug naar de padvindertoetsen. De toesten onder de padvinders zijn wat lastiger. Eerst alleen de (mintkleurige) wijsvingers! v, b, n. De m komt bij de volgende"
                     , "ronde. Let goed op dat je de b met je linkerhand typt!"]
-                ,"course_text":  "vfvfvf bfbfbfb njnjnjnj vfbfnj njbfvf njnbfbfvfvf bfnjnjv vfbfbfnj njnjnjvfvfb njvfbfbf bfvf njvf njvf bfvf bfn bfn bfan vfan man munt beamen boekenprijsvraag botenverhuur brandverf buitenvoeler bureauniveau burenoverlast boekenprijsvraag botenverhuur vfvfvf vf vf vv vf vfvf brandverf buitenvoeler bfbfbf bf bf bbf bbf bfbfbfbf bureauniveau burenoverlast njnjnj njnj nj njnj nn njn njn njnjn teddyberenvoorraad uitbreidingsvraag aanbeval afwijkingsbevoegdheid dienstbevel dunbevolkt dwangbevel flaneerboulevard fouilleringsbevoegdheid nablijver honkbalveld nestbevuiler onderbuikgevoel ontbijtservies opsporingsbevel regenboogvlag sluitingsbevel strandboulevard"
+                ,"course_text":  "vfvfvf bfbfbfb njnjnjnj vfbfnj njbfvf njnbfbfvfvf bfnjnjv vfbfbfnj njnjnjvfvfb njvfbfbf bfvf njvf njvf bfvf bfn bfn bfan vfan man munt beamen boekenprijsvraag botenverhuur brandverf buitenvoeler bureauniveau burenoverlast  vfvfvf vf vf vv vf vfvf flaneerboulevard fouilleringsbevoegdheid nablijver honkbalveld  njnjnj njnj nj njnj nn njn njn njnjn teddyberenvoorraad uitbreidingsvraag aanbeval afwijkingsbevoegdheid dienstbevel dunbevolkt dwangbevel nestbevuiler bfbfbf bf bf bbf bbf bfbfbfbf  onderbuikgevoel ontbijtservies opsporingsbevel regenboogvlag sluitingsbevel strandboulevard"
             },
             {
                 "id": 5,
@@ -115,7 +114,7 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "De laatste letters, van alles wat. De roze pink, x voor de wijsvinger, de c voor de linker middelvinger en de m voor de rechter wijsvinger. Success",
-                "course_text": "zazazaza xsxsxsxs cdcdcdcd mjmjmjmjmj zazazaza zamjxscd cdxsmjza zamjxscd cdcdcd xsxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj qqqq pqpq qq pp pp qq pp pqqpqpp pqpq pq  aaibaarheidsfacbtor Aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
+                "course_text": "zazazaza xsxsxsxs cdcdcdcd mjmjmjmjmj zazazaza zamjxscd cdxsmjza zamjxscd cdcdcd xsxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfacbtor aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
             }
         ]
     }
