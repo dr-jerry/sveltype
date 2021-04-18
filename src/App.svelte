@@ -12,17 +12,27 @@
 	   	statStore.reset();
 	}
 
+	function unicode2key(char) {
+        // map the unicode for enter to the enter key.
+		console.log("unicoed " + char)
+		if (char === '\u23CE')
+			return 'Enter';
+		return char;
+	}
+
 	function handleType(evt) {
 		console.log("handle store " + $actionStore + " " + JSON.stringify($statStore));
 		if (course && $statStore.startTime) {
 			actionStore.update((as) => ({...as, ...{expected: courseText[0]
 				, "typed" : evt.key, focus: courseText[1] || "end" }}));
 			let now = new Date().getTime();
-			if (courseText[0] === evt.key || course.ignoreError) {
+			console.log(`key is key  ${evt.key}`);
+			if (unicode2key(courseText[0]) === evt.key || course.ignoreError) {
 				courseText = courseText.substr(1);
 				statStore.hit(evt.key)
 			} else { // missed the key.
-				statStore.miss({typed: evt.key, missed: courseText[0]});
+
+				statStore.miss({typed: evt.key, missed: unicode2key(courseText[0])});
 			}
 		} else if (course && evt.key === ' ') { // start the course.
 			statStore.init()

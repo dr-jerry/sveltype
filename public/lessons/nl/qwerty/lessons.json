@@ -17,7 +17,7 @@
                     , " voor de linkerhand, de h en j voor de rechterhand. De wijsvingertoetsen op het toetsenbord hieronderzijn mintkleurig.<br>"
                     , " De spatie is voor een van de duimen. Het is belangrijk dat alle andere vingers"
                     , " op hun plaats blijven!.<br> Wanneer je de g of de h met je wijsvingers hebt getypts, zet je ze snel weer op f en j.<br> Zet je vingers goed en druk met een duim op de spatie!"],
-                "course_text": "ff jj ff jj ff jj f j fj gfgfgf hhh gf fg fg gf hj jh hjhj jj hjhhj ggf fj jj ggf a; fff jj jjjj jjjh hfjfghj jhgf jfgh fjhg hjhjhj gfgfgfgf hj gf hj gf fgf jhj jh hj fg gf gf gfgffggf hhj jjhj"
+                "course_text": "ff jj ff jj ff jj f j fj gfgfgf hjhjhj gf fg fg gf hj jh hjhj jhj hjhhj ggf fj jhj ggf fgfgfg jj jjjj jjjh hfjfghj jhgf jfgh fjhg hjhjhj gfgfgfgf hj gf hj gf fgf jhj jh hj fg gf gf gfgffggf hhj jjhj"
             },
             {
                 "id": 2,
@@ -114,8 +114,22 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "De laatste letters, van alles wat. De roze pink, x voor de wijsvinger, de c voor de linker middelvinger en de m voor de rechter wijsvinger. Success",
-                "course_text": "zazazaza xsxsxsxs cdcdcdcd mjmjmjmjmj zazazaza zamjxscd cdxsmjza zamjxscd cdcdcd xsxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfacbtor aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
+                "course_text": "zazazaza xsxsxsxs cdcdcdcd mjmjmjmjmj zazazaza zamjxscd cdxsmjza zamjxscd cdcdcd xsxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfactor aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
             }
         ]
-    }
+	    },
+            {
+        
+                "name": "Specials",
+                "courses": [ {
+                "id": 5,
+                "name": "enter & rechter pink",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": ["Alle letters zitter erin(toch?). We focussen nu op de rechter pink, een heleboel vreemde toetsen. De enter staat aangegeven als \u23CE en zit helemaal rechts. Enter zet normaal de cursor op de volgende regel. Maar hier zie je dat niet, we hebben maar een regel!<br> Het is een lastig om je vingers op de padvinders te houden als je de \u23CE typt maar probeer het toch maar!"]
+                ,"course_text":  ";'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=;"
+            }
+   ]}
 ]
