@@ -2,17 +2,15 @@
     import { actionStore } from './actionstore.js';
     export let keyData = {};
     let focus = false;
-    console.log("keyData = " + JSON.stringify(keyData));
     export const stats = {}
     
-    const unsubscribe = actionStore.subscribe(keyAction => {
-        console.log("keydata " )
-       focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
-       if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
-         || keyData.keys.includes(keyAction.typed.toUpperCase()))) {
-           console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)
-       }
-    });
+    // const unsubscribe = actionStore.subscribe(keyAction => {
+    //    focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
+    //    if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
+    //      || keyData.keys.includes(keyAction.typed.toUpperCase()))) {
+    //        console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)
+    //    }
+    // });
 
 </script>
 <style>

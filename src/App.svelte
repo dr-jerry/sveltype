@@ -8,25 +8,21 @@
 		course = evt.detail;	   
 	   	courseText = course.course.course_text;
 		courseName = course.course.name;
-	   	console.log(JSON.stringify(course));
 	   	statStore.reset();
 	}
 
 	function unicode2key(char) {
         // map the unicode for enter to the enter key.
-		console.log("unicoed " + char)
 		if (char === '\u23CE')
 			return 'Enter';
 		return char;
 	}
 
 	function handleType(evt) {
-		console.log("handle store " + $actionStore + " " + JSON.stringify($statStore));
 		if (course && $statStore.startTime) {
 			actionStore.update((as) => ({...as, ...{expected: courseText[0]
 				, "typed" : evt.key, focus: courseText[1] || "end" }}));
 			let now = new Date().getTime();
-			console.log(`key is key  ${evt.key}`);
 			if (unicode2key(courseText[0]) === evt.key || course.ignoreError) {
 				courseText = courseText.substr(1);
 				statStore.hit(evt.key)
@@ -42,7 +38,8 @@
 	import Course from './Course.svelte';
 </script>
 
-<svelte:window on:keypress={ handleType }/>
+<svelte:window on:keypress|preventDefault={ handleType }/>
+<!-- preventDefault is for preventing Firefox' search when pressing a quote. -->
 <main>
 	<h1>Learn Touch Typing</h1>
 	<p>Build with Svelte</p>

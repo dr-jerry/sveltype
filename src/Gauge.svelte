@@ -9,11 +9,9 @@
 
     let calculateM = (d,f) => `${20-d*Math.cos(f*Math.PI)} ${70 + d* Math.sin(Math.PI * f)}`;
 	function calculateDelta(a0, a1, errors, rad) {
-        console.log("velo in gauge is " + a1);
 		let ang0 = 2* a0 * Math.PI;
 		let ang1 = 1.8 * a1 * Math.PI + ang0;
         let angr = 1.8 * errors * Math.PI + ang0;
-        console.log("errors is " + errors + "ang r2 is " + angr);    
 		let result = {x: rad * (Math.sin(ang0) - Math.sin(ang1))
 									, y: rad * ( Math.cos(ang1) - Math.cos(ang0)), l: (ang1-ang0) > Math.PI ? 1 : 0
                       ,errors: {x: (rad + deltaR) * (Math.sin(ang0) - Math.sin(angr))

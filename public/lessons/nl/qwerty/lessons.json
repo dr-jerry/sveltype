@@ -89,7 +89,7 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "De roze pink. De q en p. Weinig woorden met q in het Nederlands, dus ook wat engelse, latijnse en fantasie woorden.  Je hebt misschien al \"qwerty\" gezien, dit geeft aan dat het toetsenbord begint met qwerty. Er zijn ook toetsenborden (in Frankrijk bijvoorbeeld) die met azerty beginnen. Er zijn ook toetsenborden met een compleet andere indeling: Dvorak of Colemak. De naam komt van de uitvinders, niet van indeling zoals bij qwerty of azerty toetsenborden.",
-                "course_text": "p;p;p; qaqaqaq p;qap;q qaqa p;p p;p qqa p;p pqaqapqapp pqpq p;q arequipa arequipa eqpt equips equipt qoph quiapo quipo quips quipu reequips pppp;p;p;p; p; p; p;p reequipt piqu spqr adapa adapt addressograph addressograph adelops qaqaqaqaqqa qqa p;p;pp adeps adept adopt aegilops aeolotropy aerograph aerohydrotherapy aerope aerotherapy afips afterdrops afterhope aqape aggappe dequeue derequisitio detraque square diquat adequaat aequo quoterig"
+                "course_text": "p;p;p; qaqaqaq p;qap;q qaqa p;p p;p qqa p;p pqaqapqapp pqpq p;q arequipa arequipa eqpt equips equipt qoph quiapo quipo quips quipu reequips pppp;p;p;p; p; p; p;p reequipt piqu spqr adapa adapt addressograph addressograph adelops qaqaqaqaqqa qqa p;p;pp adeps adept adopt aegilops aeolotropy aerograph aerohydrotherapy aerope aerotherapy afips afterdrops afterhope aqape aggappe dequeue derequisitio detraque square diquat adequaat aequo quoterig type writer quote"
             }]},
             {
         
@@ -129,7 +129,7 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": ["Alle letters zitter erin(toch?). We focussen nu op de rechter pink, een heleboel vreemde toetsen. De enter staat aangegeven als \u23CE en zit helemaal rechts. Enter zet normaal de cursor op de volgende regel. Maar hier zie je dat niet, we hebben maar een regel!<br> Het is een lastig om je vingers op de padvinders te houden als je de \u23CE typt maar probeer het toch maar!"]
-                ,"course_text":  ";'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=;"
+                ,"course_text":  ";'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=; [normaal een array] maar we hebben de komma nog niet geleerd en punt ook nog niet / \\-\\-// \u23CE;\u23CE; ;p0p; ;p0p; ;\\\u23CE;\u23CE; niet ieder keyboard is hetzelfde [punt] soms [komma] vaak [komma] eigenlijk zit de \u23CE; drie toetsen verwijderd van de padvinder's ; da's echt niet handig[punt]"
             }
    ]}
 ]
