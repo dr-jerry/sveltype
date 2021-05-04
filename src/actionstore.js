@@ -82,3 +82,12 @@ export const courseLive = derived (
 
     }
 );
+
+export const totalHits = derived (
+    statStore,
+    $statStore => {
+        let r = Object.keys($statStore["hits"]).reduce((r,k) => {r += $statStore["hits"][k].length; return r},0);
+        console.log("total is " + r);
+        return r;
+    }
+);

@@ -19,8 +19,14 @@
 		return result;
 	}
 </script>
+<style>
+	.svgauge {
+		width: 3em;
+		height: 1.9em;
+	}
+</style>
 
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+<svg class="svgauge" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 75">
 			<path d="M {calculateM(0,1/6)} a {radius} {radius} 0 {point.l} 1 {point.x} {point.y} " stroke="green" 
          stroke-width="4" fill="none"/>
          <path d="M {calculateM(deltaR,1/6)} a {radius + deltaR} {radius + deltaR} 0 {point.errors.l} 1 {point.errors.x} {point.errors.y} " stroke="red" 

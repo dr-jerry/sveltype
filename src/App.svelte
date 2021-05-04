@@ -1,9 +1,11 @@
 <script>
     import{ actionStore, statStore } from './actionstore.js';
+	import ODO from './ODO.svelte';
 	let configs = [{id: "en/qwerty", txt : "English / Qwerty"}, {id: "nl/qwerty", txt: "Nederlands / Qwerty"}];
 	let courseText  = "";
 	let course = undefined;
 	let courseName = "";
+	let nr=0;
 	function showCourse(evt) {	   
 		course = evt.detail;	   
 	   	courseText = course.course.course_text;

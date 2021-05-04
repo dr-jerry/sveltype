@@ -1,7 +1,8 @@
 <script>
   import Row from "./Row.svelte";
-  import { courseLive, statStore, errors, velocity } from './actionstore.js';
+  import { courseLive, statStore, errors, velocity, totalHits } from './actionstore.js';
   import Gauge from "./Gauge.svelte";
+  import ODO from "./ODO.svelte";
   export let theCourse;
   export let courseText;
   let wordText = "";
@@ -26,7 +27,8 @@
     <p class="waiting">...Waiting</p>
   {:then rows}
     <div class="type input text">
-      <div class="gauge"><Gauge speed={$velocity/8} errors={$errors/20}/></div>
+      <div class="gauge"><Gauge speed={$velocity/8} errors={$errors/20}/>
+        <div class="odo"><ODO total={$totalHits}/></div></div> 
         <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}
     </div>
     {#each rows as row}
@@ -39,6 +41,9 @@
 
 
 <style>
+  .odo {
+    font-size: 0.7em;
+  }
   .focus {
       padding-bottom: -0.05em;
       background-color: #CC44BB;
@@ -61,9 +66,8 @@
     float: left;
     display: inline-block;
     width: 3em;
-    height: 3em;
-  }
-  .input {
+    height: 1.5em;
+  }  .input {
     white-space: nowrap;
     font-family: Typewriter;
     font-size: 2.2em;
