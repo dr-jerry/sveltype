@@ -4,13 +4,13 @@
     let focus = false;
     export const stats = {}
     
-    // const unsubscribe = actionStore.subscribe(keyAction => {
-    //    focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
+    const unsubscribe = actionStore.subscribe(keyAction => {
+       focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
     //    if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
     //      || keyData.keys.includes(keyAction.typed.toUpperCase()))) {
     //        console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)
     //    }
-    // });
+    });
 
 </script>
 <style>

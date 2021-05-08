@@ -28,7 +28,7 @@
   {:then rows}
     <div class="type input text">
       <div class="gauge"><Gauge speed={$velocity/8} errors={$errors/20}/>
-        <div class="odo"><ODO total={$totalHits}/></div></div> 
+        <div class="odo"><ODO value={courseText.length}/></div></div> 
         <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}
     </div>
     {#each rows as row}
