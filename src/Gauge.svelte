@@ -2,7 +2,6 @@
 	export let speed;
     export let errorrate;
 	export let radius=40;
-	$: console.log("errorrate " + errorrate);
     let delta, point, pointr;
     const deltaR = -10;
 	$: point = calculateDelta(1/6, speed, errorrate, radius);
@@ -10,7 +9,6 @@
 
     let calculateM = (d,f) => `${20-d*Math.cos(f*Math.PI)} ${70 + d* Math.sin(Math.PI * f)}`;
 	function calculateDelta(a0, a1, errors, rad) {
-			console.log("error" + errors);
 		let ang0 = 2* a0 * Math.PI;
 		let ang1 = 1.8 * a1 * Math.PI + ang0;
         let angr = 1.8 * (1-errorrate) * Math.PI + ang0;
