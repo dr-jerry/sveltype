@@ -37,5 +37,5 @@
 	<path d="M {calculateM(0,1/6)} a {radius} {radius} 0 {point.l} 1 {point.x} {point.y} " stroke="green" 
          stroke-width="4" fill="none"/>
     <path d="M {calculateM(deltaR,1/6)} a {radius + deltaR} {radius + deltaR} 0 {point.errors.l} 1 {point.errors.x} {point.errors.y} " 
-		 class="errorrate" style="--errorcolor: {"#"+Math.floor(errorrate*255).toString(16)+Math.floor((1-errorrate)*255).toString(16)+"02"}"/>
+		 class="errorrate" style="--errorcolor: {"#"+Math.floor(errorrate*255).toString(16).padStart(2, '0')+Math.floor((1-errorrate)*255).toString(16).padStart(2, '0')+"02"}"/>
 </svg>
