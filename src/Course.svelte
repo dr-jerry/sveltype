@@ -27,7 +27,7 @@
     <p class="waiting">...Waiting</p>
   {:then rows}
     <div class="type input text">
-      <div class="gauge"><Gauge speed={$velocity/8} errors={$errors/20}/>
+      <div class="gauge"><Gauge speed={$velocity/8} errorrate={$errors / $totalHits}/>
         <div class="odo"><ODO value={courseText.length}/></div></div> 
         <span class="focus">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</span>{courseText.substring(1)}
     </div>
