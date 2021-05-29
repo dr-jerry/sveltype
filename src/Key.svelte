@@ -2,10 +2,13 @@
     import { actionStore } from './actionstore.js';
     export let keyData = {};
     let focus = false;
+    let missed = 0;
+    $: console.log("missed is " + missed + "keyData " + keyData.keys);
     export const stats = {}
     
     const unsubscribe = actionStore.subscribe(keyAction => {
        focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
+       if (keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase())) missed = keyAction.missed || 0;
     //    if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
     //      || keyData.keys.includes(keyAction.typed.toUpperCase()))) {
     //        console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)

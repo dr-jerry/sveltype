@@ -22,13 +22,16 @@
 
 	function handleType(evt) {
 		if (course && $statStore.startTime) {
-			actionStore.update((as) => ({...as, ...{expected: courseText[0]
-				, "typed" : evt.key, focus: courseText[1] || "end" }}));
 			let now = new Date().getTime();
 			if (unicode2key(courseText[0]) === evt.key || course.ignoreError) {
+				actionStore.update((as) => ({...as, ...{expected: courseText[0]
+					, "typed" : evt.key, focus: courseText[1] || "end", missed: 0 }}));
+
 				courseText = courseText.substr(1);
 				statStore.hit(evt.key)
 			} else { // missed the key.
+				actionStore.update((as) => { console.log("as : " + JSON.stringify(as));
+				return {...as, ...{missed: as.missed+1}}});
 
 				statStore.miss({typed: evt.key, missed: unicode2key(courseText[0])});
 			}
