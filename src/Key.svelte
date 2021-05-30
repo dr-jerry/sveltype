@@ -3,7 +3,6 @@
     export let keyData = {};
     let focus = false;
     let missed = 0;
-    $: console.log("missed is " + missed + "keyData " + keyData.keys);
     export const stats = {}
     
     const unsubscribe = actionStore.subscribe(keyAction => {

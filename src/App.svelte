@@ -30,8 +30,7 @@
 				courseText = courseText.substr(1);
 				statStore.hit(evt.key)
 			} else { // missed the key.
-				actionStore.update((as) => { console.log("as : " + JSON.stringify(as));
-				return {...as, ...{missed: as.missed+1}}});
+				actionStore.update((as) => ({...as, ...{missed: as.missed+1}}));
 
 				statStore.miss({typed: evt.key, missed: unicode2key(courseText[0])});
 			}

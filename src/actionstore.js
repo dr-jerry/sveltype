@@ -20,8 +20,7 @@ function createStats() {
         }),
 		miss: (pair) => update(stats => {
             return {...stats, missed: [pair, ...stats["missed"]]
-                , velocity: [-1].concat(stats.velocity.slice(0, veloCount-1))}
-        }),
+        }}),
         init: () => update(stats => {
             let now = new Date().getTime();
             return {...stats, startTime: now, lastTime: now, endTime: 0}
@@ -87,7 +86,6 @@ export const totalHits = derived (
     statStore,
     $statStore => {
         let r = Object.keys($statStore["hits"]).reduce((r,k) => {r += $statStore["hits"][k].length; return r},0);
-        console.log("total is " + r);
         return r;
     }
 );
