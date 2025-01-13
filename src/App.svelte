@@ -52,6 +52,14 @@
   	   <div class="play ground">
 	     <Course theCourse={course} courseText={courseText}></Course>
 	   </div>	
+	{:else}
+	   <div class="explanation">
+	   <p>Welcome to this open source touch typing course. Learn blind touch typing for free!<br>
+		2 languages are currently supported: Dutch and English find them on left</p>
+	   <p>If you would like to add other languages or keyboard layouts, feel free to add them yourself, you'll find the source ccode at 
+		<a href="https://github.com/dr-jerry/sveltype">github</a></p>
+		<p>to start carefully read the explanation at the start of each lesson, and don't look down at your fingers!</p>
+	   </div>
 	{/if}
 </main>
 
@@ -85,5 +93,10 @@
 	  float: right;
 	  width: 70%;
 	  font-size: 0.6em;
+	}
+	.explanation {
+		float: left;
+		width: 50%;
+		text-align: left;
 	}
 </style>

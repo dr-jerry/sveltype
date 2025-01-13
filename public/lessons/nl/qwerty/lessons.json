@@ -45,7 +45,7 @@
                 "level": "easy",
                 "line_length": 30,
                 "ignoreError" : true,
-                "description": "We gaan nu verder met de pinken: de a en ;. In het engels betekent pink roze, dus dat is ook de kleur. Alle vingers op hun plaats.",
+                "description": "We gaan nu verder met de pinken: de a en ;. In het engels betekent pink roze, dus dat is ook de kleur. Om echt goed blind te leren typen kun je overwegen om een doek over je handen en toetsenbord te leggen zodat je ze niet kunt zien. <br>Alle vingers op hun plaats. En type de spatie!",
                 "course_text": "aas saa ;; las; ;;; sla sjaal haag ghaa flag gal hallal sassl aas haas ;; hak; ;;kaas slaaf das ;; slag glas flaaag aaaa lak kal asdfghjkl; ;lkjhgfdsa ;; aa a"
             }]},
             {
@@ -108,28 +108,47 @@
             },
             {
                 "id": 5,
-                "name": "zxcm",
+                "name": "zxcm;",
                 "duration": "3",
                 "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
                 "description": "De laatste letters, van alles wat. De roze pink, x voor de wijsvinger, de c voor de linker middelvinger en de m voor de rechter wijsvinger. Success",
-                "course_text": "zazazaza xsxsxsxs cdcdcdcd mjmjmjmjmj zazazaza zamjxscd cdxsmjza zamjxscd cdcdcd xsxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfactor aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
-            }
+                "course_text": "zazazazaqaz xsxsxsxs cdcdcdcdedcdedcdedcdedc mjmjmjmjmjmjmjmjujmjumumjm zaqazaqqqazzazaza zamjxscd cdxsmjza zamjxscd cdcdcddededzaq jmujmjumxscxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfactor aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
+            },
+            {
+                "id": 6,
+                "name": ",./;",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": "De laatste overgebleven characters van de onderrij, 10 toetsen, voor elke rij, maakt dat we met 26 letters er nog 4 overhebben allemaal voor de rechterhand",
+                "course_text": "hjm,j,,.k,k,k,k,kik,kik,kik,k.lol.lol.lol.jmuymy.,kl.j....kk..lll,,ll,,, ,kik,kik,ki,.lol..lo..zazazazaqaz xsxsxsxs cdcdcdcdedcdedcdedcdedc mjmjmjmjmjmjmjmjujmjumumjm zaqazaqq ,k.l.l,k...jk.uy,.l de punt. en de comma, qaz"
+d            }
         ]
 	    },
             {
         
                 "name": "Specials",
                 "courses": [ {
-                "id": 5,
+                    "id": 7,
+                    "name": "Shift;",
+                    "duration": "3",
+                    "ignoreError" : true,                
+                    "level": "easy",
+                    "line_length": 30,
+                    "description": "De hooflettters, daarvoor is de shift toets. Daar zijn er 2 van: eentje aan de linker hand en eentje aan de rechter hand. Door teglijkertijd de shift (met je pink) en een andere toets in te drukken vorm je een hoofd letter. Het is dus ook belangrijk om de shift toets in te drukken met de hand die niet nodig is voor de letter. Een A met alleen links is onbegonnen werk",
+                    "course_text": "U ZeGt het NieT QuasIe GeMakKeLiJk HET ,< is Soms nog Best lAstiQ.> ls >> JE EEN HELEBOEl LetTTers in HOOFdletTeRs wilT tyPEn kun JE de CAPSLOCk oveRwegEN die zit LinKS boven de SHIft. Een X indrukken iS gENOeg, Dan Gaat AllESS in HooFDLEtteRS. NoG ene X indrukken en ALles IS WEER normAalq ><>< > Is GroTer en < is kleiner als er een | VooR Zet worDTS het Net een,. k |< van KlEiner dus, niet JoOst |< lein DiE houDT niet van ZweEdse CamerA VroUwn"
+                }, {
+                "id": 8,
                 "name": "enter & rechter pink",
                 "duration": "3",
                 "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
                 "description": ["Alle letters zitter erin(toch?). We focussen nu op de rechter pink, een heleboel vreemde toetsen. De enter staat aangegeven als \u23CE en zit helemaal rechts. Enter zet normaal de cursor op de volgende regel. Maar hier zie je dat niet, we hebben maar een regel!<br> Het is een lastig om je vingers op de padvinders te houden als je de \u23CE typt maar probeer het toch maar!"]
-                ,"course_text":  ";'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=; [normaal een array] maar we hebben de komma nog niet geleerd en punt ook nog niet / \\-\\-// \u23CE;\u23CE; ;p0p; ;p0p; ;\\\u23CE;\u23CE; niet ieder keyboard is hetzelfde [punt] soms [komma] vaak [komma] eigenlijk zit de \u23CE; drie toetsen verwijderd van de padvinder's ; da's echt niet handig[punt]"
+                ,"course_text":  "k, k,,k,k.l.l.l//;//;//;,..kkmjmaz;'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=; [normaal een array] maar we hebben de komma nog niet geleerd en punt ook nog niet / \\-\\-// \u23CE;\u23CE; ;p0p; ;p0p; ;\\\u23CE;\u23CE; niet ieder keyboard is hetzelfde [punt] soms [komma] vaak [komma] eigenlijk zit de \u23CE; drie toetsen verwijderd van de padvinder's ; da's echt niet handig[punt]"
             }
    ]}
 ]

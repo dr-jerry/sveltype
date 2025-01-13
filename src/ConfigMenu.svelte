@@ -21,6 +21,7 @@
 }
 .typewriter.menu {
   font-family: Typewriter, monospace;
+  cursor: pointer;
 }
 .header {
   text-align: left;
