@@ -125,8 +125,7 @@
                 "line_length": 30,
                 "description": "De laatste overgebleven characters van de onderrij, 10 toetsen, voor elke rij, maakt dat we met 26 letters er nog 4 overhebben allemaal voor de rechterhand",
                 "course_text": "hjm,j,,.k,k,k,k,kik,kik,kik,k.lol.lol.lol.jmuymy.,kl.j....kk..lll,,ll,,, ,kik,kik,ki,.lol..lo..zazazazaqaz xsxsxsxs cdcdcdcdedcdedcdedcdedc mjmjmjmjmjmjmjmjujmjumumjm zaqazaqq ,k.l.l,k...jk.uy,.l de punt. en de comma, qaz"
-d            }
-        ]
+            }]
 	    },
             {
         
@@ -148,7 +147,7 @@ d            }
                 "level": "easy",
                 "line_length": 30,
                 "description": ["Alle letters zitter erin(toch?). We focussen nu op de rechter pink, een heleboel vreemde toetsen. De enter staat aangegeven als \u23CE en zit helemaal rechts. Enter zet normaal de cursor op de volgende regel. Maar hier zie je dat niet, we hebben maar een regel!<br> Het is een lastig om je vingers op de padvinders te houden als je de \u23CE typt maar probeer het toch maar!"]
-                ,"course_text":  "k, k,,k,k.l.l.l//;//;//;,..kkmjmaz;'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=; [normaal een array] maar we hebben de komma nog niet geleerd en punt ook nog niet / \\-\\-// \u23CE;\u23CE; ;p0p; ;p0p; ;\\\u23CE;\u23CE; niet ieder keyboard is hetzelfde [punt] soms [komma] vaak [komma] eigenlijk zit de \u23CE; drie toetsen verwijderd van de padvinder's ; da's echt niet handig[punt]"
+                ,"course_text":  "k, k,,k,k.l.l.l//;//;//;,..kkmjmaz;'\\\u23CE\\[]//;/;[;];';\u23CE;\u23CE;\u23CE;\u23CE0p;0;0;-;-;=; [normaal een array] maar we hebben de komma nog niet geleerd en punt ook nog niet / \\-\\-// \u23CE;\u23CE; ;p0p; ;p0p; ;\\\u23CE;\u23CE; niet ieder keyboard is hetzelfde [punt] soms [komma] vaak [komma] eigenlijk zit de \u23CE; drie toetsen verwijderd van de padvinder's ; da's echt niet handig[punt]. De enter toets kan de vorm van een L of een blokje hebben, het verschil tussen een ansi of ISO toetsenbord."
             }
    ]}
 ]
