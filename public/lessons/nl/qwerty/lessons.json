@@ -53,33 +53,75 @@
                 "name": "Bovenrij", 
                 "courses": [ {
                 "id": 5,
-                "name": "uyrt",
+                "name": "uyrt-1",
                 "duration": "3",
                 "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
-                "description": "De padvinder toetsen hebben we gehad, we gaan verder met de toesten erboven. We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met je vinger terug naar de padvindertoetsen, anders worden ze koud. Eerst alleen de (mintkleurige) wijsvingers! r, t, y en u",
-                "course_text": "rfrfrfrf rf tftftf tf yjyjyj yj yjyjyjyj ujujuj uj rftfrftf yjujujyjujuj rf rf rut rfuj ruyt rf tftftf rutty urty yurt jytru yrtu yjyjyj uj uj ujujujuj jyurtyuy hurty furty farty jaryj larty kurty kaurty saurty suarty laus lyssal rujyt duurty yduur suduur yguur durururs luyrtuy ughtyr rygur fygur fluff flaf tftftf rfrf tfujyj rft rfrrf tftftt yrska karskur hurk yghals haulshak lakyus kaasy lykagfh halytr"
+                "description": ["De padvinder toetsen hebben we gehad, we gaan verder met de toesten erboven."
+                ,"We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met je vinger terug naar de padvindertoetsen, anders worden ze koud. Eerst alleen de (mintkleurige) wijsvingers! r, t, y en u."
+                , " Let goed op dat je de y met de rechter wijsvinger typt. Als je goed kijkt zul je zien dat de omkaderde focus letter (De letter die moet typen)"
+                , "De kleur heeft van de vinger die je moet gebruiken. En welke hand je moet gebruiken wordt aangegeven door de dikker lijn links of rechts."],
+                "course_text": ["rfrfrfrf rf tftftf tf yjyjyj yj yjyjyjyj ujujuj uj rftfrftf yjujujyjujuj rf rf rut rfuj ruyt rf tftftf rutty urty yurt jytru"
+                , "yrtu yjyjyj uj uj ujujujuj jyurtyuy hurty furty farty jaryj larty kurty"]
             },
             {
                 "id": 5,
-                "name": "ei",
+                "name": "uyrt-2",
                 "duration": "3",
                 "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
-                "description": "En door met de e en i, beide voor de middelvinger van respectevelike de linker en rechterhand",
-                "course_text": "ededed ed eded ikikik ik ikik ed ei ie iie ieieie ii ii iieee dertig kiertje siertje liertje jjertje startsalaris eded ed ed ed ededed radartjes hilk hijsheft rustig raadsel slagader straat adres surfles slager huejf fleeet deur ikikik ik ikikik daear diekdag jij daar halleel tyuig rekelaar lasse asert yflag das slaughter huis life eikel sierfis dikkertje dak drukkertje hafel glasig"
+                "description": ["uyrt deel2"],
+                "course_text": ["kaurty saurty suarty laus lyssal rujyt duurty yduur suduur yguur durururs luyrtuy"
+                , "ughtyr rygur fygur fluff flaf tftftf rfrf tfujyj rft rfrrf tftftt yrska karskur hurk yghals haulshak lakyus kaasy lykagfh"
+                , "halytr"]
+            },             
+            {
+                "id": 5,
+                "name": "ei-1",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": "Deel 1. En door met de e en i, beide voor de middelvinger van respectevelike de linker en rechterhand",
+                "course_text": ["ededed ed eded ikikik ik ikik ed ei ie iie ieieie ii ii iieee dertig kiertje siertje liertje jjertje startsalaris"
+                , "eded ed ed ed ededed radartjes hilk hijsheft rustig raadsel slagader straat adres surfles slager huejf"]
             },
             {
                 "id": 5,
-                "name": "wo",
+                "name": "ei-2",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": "Deel 2 ei",
+                "course_text": ["fleeet deur ikikik ik "
+                , "ikikik daear diekdag jij daar halleel tyuig rekelaar lasse asert yflag das slaughter huis life eikel sierfis itjer"
+                , "dikkertje dak drukkertje hafel glasig dijkeer jug"]
+            },
+            {
+                "id": 5,
+                "name": "wo-1",
                 "duration": "3",
                 "ignoreError" : true,                
                 "level": "easy",
                 "line_length": 30,
                 "description": "Verder met de gele ringvingers, w en o voor respectivelijk links en rechts.",
-                "course_text": "wswsws ololol wsol wsol olws wso wsolo wswswso wswsolow wsolw wsowsoow wrok wot wouter douwe hoogkwalitatief wswswsws ws wswsws ws oloololool doodswade doorweefde gehoorweg geitouw herstelsoftware hertrouw autowasstraat koekwaus touwslager strooiweides strowis studiowerk stukadoorswerk stuurtouw isolatiewaarde flodderwerk olololoololololo geloofsgeweld gootwater hijstouw hoofdwal hoofdwas hoofdwedstrijd"
+                "course_text": ["wswsws ololol wsol wsol olws wso wsolo wswswso wswsolow wsolw wsowsoow wrok wot wouter douwe hoogkwalitatief wswswsws"
+                , "ws wswsws ws oloololool doodswade doorweefde gehoorweg geitouw herstelsoftware"]
+            },
+            {
+                "id": 5,
+                "name": "wo-2",
+                "duration": "3",
+                "ignoreError" : true,                
+                "level": "easy",
+                "line_length": 30,
+                "description": "Verder met de gele ringvingers, w en o voor respectivelijk links en rechts.",
+                "course_text": ["herstelsoftware hertrouw autowasstraat koekwaus touwslager strooiweides"
+                , "strowis studiowerk stukadoorswerk stuurtouw isolatiewaarde flodderwerk olololoololololo geloofsgeweld gootwater hijstouw hoofdwal"
+                , "hoofdwas hoofdwedstrijd"]
             },
             {
                 "id": 5,
@@ -104,7 +146,11 @@
                 "description": ["De bovenrij met de klinkers we gehad, we gaan verder met de benedenrij. We beginnen weer vanuit de padvinder toetsen en na elke toetstaanslag ga je weer snel met"
                     , "je vinger terug naar de padvindertoetsen. De toesten onder de padvinders zijn wat lastiger. Eerst alleen de (mintkleurige) wijsvingers! v, b, n. De m komt bij de volgende"
                     , "ronde. Let goed op dat je de b met je linkerhand typt!"]
-                ,"course_text":  "vfvfvf bfbfbfb njnjnjnj vfbfnj njbfvf njnbfbfvfvf bfnjnjv vfbfbfnj njnjnjvfvfb njvfbfbf bfvf njvf njvf bfvf bfn bfn bfan vfan man munt beamen boekenprijsvraag botenverhuur brandverf buitenvoeler bureauniveau burenoverlast  vfvfvf vf vf vv vf vfvf flaneerboulevard fouilleringsbevoegdheid nablijver honkbalveld  njnjnj njnj nj njnj nn njn njn njnjn teddyberenvoorraad uitbreidingsvraag aanbeval afwijkingsbevoegdheid dienstbevel dunbevolkt dwangbevel nestbevuiler bfbfbf bf bf bbf bbf bfbfbfbf  onderbuikgevoel ontbijtservies opsporingsbevel regenboogvlag sluitingsbevel strandboulevard"
+                ,"course_text":  ["vfvfvf bfbfbfb njnjnjnj vfbfnj njbfvf njnbfbfvfvf bfnjnjv vfbfbfnj njnjnjvfvfb njvfbfbf bfvf njvf njvf bfvf bfn bfn bfan"
+                ,"vfan man munt beamen boekenprijsvraag botenverhuur brandverf buitenvoeler bureauniveau burenoverlast  vfvfvf vf vf vv vf vfvf flaneerboulevard"
+                ,"fouilleringsbevoegdheid nablijver honkbalveld  njnjnj njnj nj njnj nn njn njn njnjn teddyberenvoorraad uitbreidingsvraag aanbeval"
+                ,"afwijkingsbevoegdheid dienstbevel dunbevolkt dwangbevel nestbevuiler bfbfbf bf bf bbf bbf bfbfbfbf  onderbuikgevoel ontbijtservies"
+                ,"opsporingsbevel regenboogvlag sluitingsbevel strandboulevard"]
             },
             {
                 "id": 5,
@@ -114,7 +160,13 @@
                 "level": "easy",
                 "line_length": 30,
                 "description": "De laatste letters, van alles wat. De roze pink, x voor de wijsvinger, de c voor de linker middelvinger en de m voor de rechter wijsvinger. Success",
-                "course_text": "zazazazaqaz xsxsxsxs cdcdcdcdedcdedcdedcdedc mjmjmjmjmjmjmjmjujmjumumjm zaqazaqqqazzazaza zamjxscd cdxsmjza zamjxscd cdcdcddededzaq jmujmjumxscxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfactor aaigem aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"
+                "course_text": ["zazazazaqaz xsxsxsxs cdcdcdcdedcdedcdedcdedc mjmjmjmjmjmjmjmjujmjumumjm zaqazaqqqazzazaza zamjxscd cdxsmjza zamjxscd cdcdcddededzaq"
+                , "jmujmjumxscxsx cdxs xscd mjxs xsmj zamj mjza zazazazaz zazmmjxsxcdc cdcdc cdmj mjc cdmj p;qaqap;qap;p p;qap;q p;qa aaibaarheidsfactor aaigem"
+                , "aalbessenjam indexs aandelenindexen examen aanvulmateriaal rixtel complex expres flex matrix mix affix taxi maxi zanaxi chamex export aimabel"
+                , "ajax ajuinachtig aalmoezen akkerhommel ajaxsupporters xsxsxs xs xs xxs xxs xs xsxsxsxs zakkoordenschema alimentatiezaak zazazaza za zz za za"
+                , "zza za lexiastraat basreflexkast basstemmen bauxiet bazelmans bedtextiel zekermixer beklagcommissie cdcdcd cd cd cdcd ccd cccd cdcdcdcd belastingtechnisch"
+                , "beleidsaccent beleidscentrum beroepscontext beurscentrum collegezalencomplex collegezitting gezinscontext ijzeroxide mjmjmj mj mj mjmjmj mmj"
+                , "mmj mjmjmmj mj kazernecomplex knechtschap kazim kluizencomplex paleizencomplex the quick brown fox jumps over the lazy dog"]
             },
             {
                 "id": 6,

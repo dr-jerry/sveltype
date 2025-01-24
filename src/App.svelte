@@ -8,7 +8,9 @@
 	let nr=0;
 	function showCourse(evt) {	   
 		course = evt.detail;	   
-	   	courseText = course.course.course_text;
+	   	if (typeof course.course.course_text === "string")
+			courseText = course.course.course_text;
+		else courseText = course.course.course_text.join(' ')
 		courseName = course.course.name;
 	   	statStore.reset();
 	}
