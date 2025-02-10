@@ -1,15 +1,19 @@
 <script>
   import Row from "./Row.svelte";
-  import { courseLive, statStore, errors, velocity, totalHits } from './actionstore.js';
+  import { courseLive, statStore, errors, velocity, totalHits, actionStore } from './actionstore.js';
   import Gauge from "./Gauge.svelte";
   import ODO from "./ODO.svelte";
   export let theCourse;
   export let courseText;
+
   let char2Class = {};
   let wordText = "";
   let wordList = [];
   let theLayout = [];
-  
+  function toggleCrossHairs(evt) {
+    console.log("show crosshairs: " + JSON.stringify(actionStore) )
+    actionStore.update((as) => ({...as, ...{showCrossHairs: !as.showCrossHairs}}));
+  }
   fetch("layouts/" + theCourse.layout + ".json").then(
     (resp) => { theLayout = resp.json();
       theLayout.then(layout => layout.map(row => row.map(key => 
@@ -37,6 +41,11 @@
       <div class="gauge"><Gauge speed={$velocity/8} errorrate={$errors / $totalHits}/>
         <div class="odo"><ODO value={courseText.length}/></div></div> 
         <div class="focus {char2Class[courseText[0]]}">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</div>{courseText.substring(1)}
+        <div class="key target pointer" on:click={(evt) => {toggleCrossHairs(evt)}}>
+          {#if $actionStore.showCrossHairs}
+          hide
+          {:else}show
+        {/if}</div>
     </div>
     {#each rows as row}
       <Row rowData={row}/>
@@ -48,6 +57,9 @@
 
 
 <style>
+  .pointer {
+    cursor: pointer;
+  }
   .odo {
     font-size: 0.7em;
   }
@@ -95,6 +107,15 @@
     border: 1px black solid;
     border-radius: 6pt;
     overflow: hidden;
+  }
+  .key.target {
+    color: #AAAAAA;
+    margin-top: 0.2em;
+    float: right;
+    background-image: url(/img/vizier.svg);
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    display: block;
   }
 
   .focus.pink {

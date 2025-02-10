@@ -1,6 +1,5 @@
 import { writable, derived } from 'svelte/store';
 
-export const actionStore = writable({});
 
 
 function createStats() {
@@ -54,7 +53,7 @@ function createStats() {
 
 // export const count = createCount();
 
-
+export const actionStore = writable({showCrossHairs: true});
 
 export const statStore = createStats();
 

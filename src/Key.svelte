@@ -8,9 +8,6 @@
     const unsubscribe = actionStore.subscribe(keyAction => {
        focus = keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase());
        if (keyAction.focus && keyData.keys.includes(keyAction.focus.toUpperCase())) missed = keyAction.missed || 0;
-    //    if (keyAction.expected && (keyData.keys.includes(keyAction.expected.toUpperCase())  
-    //      || keyData.keys.includes(keyAction.typed.toUpperCase()))) {
-    //        console.log("clicked " + keyData.keys[0] + " " + keyAction.typed)
     //    }
     });
 
@@ -75,7 +72,7 @@
     .top-k { height: 50%; width: 100%; vertical-align: baseline; }
 </style>
 <div class="wrapper {keyData.parentClass ? keyData.parentClass : 'niks'}">
-   <div class="key {keyData.class ? keyData.class : ''}" class:expected={focus}>
+   <div class="key {keyData.class ? keyData.class : ''}" class:expected={focus && $actionStore.showCrossHairs}>
         <div class="bottom-l">
             {@html (keyData.keys[0] === ' ' || !keyData.keys[0] ? "&nbsp;" : keyData.keys[0])}
         </div>

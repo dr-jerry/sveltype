@@ -40,6 +40,7 @@
 			statStore.init()
 		}
 	}
+
 	import ConfigMenu from './ConfigMenu.svelte';
 	import Course from './Course.svelte';
 </script>
