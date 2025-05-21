@@ -1,43 +1,40 @@
 <script>
     import Number from "./Number.svelte";
-    export let newNumber = 0;
-    export let dure = 200;
-    let numbers = [parseInt(newNumber)];
-    let direction = 0; // idea: if direction is 2 (or -2) drumdirection is constant.
-
-    
-    $: direction = drc(numbers[0], parseInt(newNumber), direction);
-    $: numbers = rollNumbers(numbers[0], parseInt(newNumber));
-    $: removeUntilLast(numbers);
-
-	let drc =  (s, e,d) => s < e  ?  (e - s <= 5 ?  1 : -1 ) : ( s - e >= 5 ? 1 : -1);
-    function rollNumbers(s, e) {
-        if (s === e) { return [s];}
+    let {target = 0,  dure = 200} = $props();
+    let current = $state(target);
+    // tc 0  1  2  3  4  5  6  7  8  9  
+    // 0  0  -1 -1 -1 -1  1  1  1  1  1   100-104
+    // 1  1   0 -1  -1 -1 -1 1  1  1  1  12-15 c*10+t  c > t-5 && c < t+5
+    // 2  1   1  0  -1 -1 -1 -1 1  1  1  23-26
+    // 3  1   1  1  0  -1 -1 -1 -1 1  1  34-37
+    // 4  1   1  1  1  0  -1 -1 -1 -1 1  45-48
+    // 5  1   1  1  1  1  0  -1 -1 -1 -1 56-59   
+    // 6  -1  1  1  1  1  1  0  -1 -1 -1  67-70        c
+    // 7  -1 -1  1  1  1  1  1  0  -1 -1  71,78-80
+    // 8  -1 -1 -1  1  1  1  1  1  0  -1  81,82 89,90
+    // 9  -1 -1 -1 -1  1  1  1  1  1  0   91-93,100
+    let delta = $derived.by(() => {
+        let result;
+        if (target === current) result = 0;
         else {
-            let d = drc(s,e);
-            if (d > 1) {
-                // the drums can only roll up. Todo (d < -1) the drums can only roll down
-                return Array((s>e ? e +10 : e)-s+1).fill().map((_, i) => (s+i) % 10);
-            }
-            // drums can go up or down depending on the distance of next number
-            let sz = (d > 0 && e > s) || (d < 0 && e < s) ? Math.abs(e - s) + 1 : 10 - Math.abs( e-s) + 1
-            return Array(sz).fill().map((_, i) => { 
-                let n = (s+i*d);
-                return n >= 0 ? n % 10 : 10 +n
-            });
+            result =  current < target  ?  (target - current <= 5 ?  1 : -1 ) 
+                : ( current - target) >= 5 ? 1 : -1; 
         }
-    }
+        return result;
+    });
 
-    function removeUntilLast(nrs) {
-			if (nrs.length > 1) {
-				setTimeout((nrs) => {numbers = nrs.slice(1);focus = nrs[0]}, dure, numbers)
-			}
-    }
+    function moveToTarget() {
+        let id;
+        if (delta) {
+            id = setInterval(() => {
+                if((current + delta) < 0) current+=10;current = Math.abs((current + delta) % 10)}, 200)
+        }
+        return () => {clearInterval(id)}
+    };
+    $effect(() => moveToTarget());
 </script>
 <div class="drum">
-    {#each numbers.slice(0,1) as number (number)}
-      <Number nr={number} {direction}/>
-    {/each}
+    <Number nr={current} direction={delta}/>
 </div>
 <style>
   .drum {

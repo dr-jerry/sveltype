@@ -3,34 +3,34 @@
   import { courseLive, statStore, errors, velocity, totalHits, actionStore } from './actionstore.js';
   import Gauge from "./Gauge.svelte";
   import ODO from "./ODO.svelte";
-  export let theCourse;
-  export let courseText;
+  let {course, courseText} = $props();
 
   let char2Class = {};
   let wordText = "";
   let wordList = [];
-  let theLayout = [];
+  let theLayout = $state([]);
   function toggleCrossHairs(evt) {
-    console.log("show crosshairs: " + JSON.stringify(actionStore) )
     actionStore.update((as) => ({...as, ...{showCrossHairs: !as.showCrossHairs}}));
   }
-  fetch("layouts/" + theCourse.layout + ".json").then(
+  console.log("in Course: " + JSON.stringify(course));
+  fetch("layouts/" + course.layout + ".json").then(
     (resp) => { theLayout = resp.json();
-      theLayout.then(layout => layout.map(row => row.map(key => 
+        theLayout.then(lt => {
+        lt.forEach(row => row.map(key => 
+
         key.keys.filter(label => label).map(label => {
           if (label.match(/[A-Z]/)) {
             char2Class[label.toLowerCase()] = `${key["class"]} ${key.parentClass}`
           }
-          if (label !== ' ') char2Class[label] = `${key["class"]} ${key.parentClass}`})))
-    )});
+          if (label !== ' ') char2Class[label] = `${key["class"]} ${key.parentClass}`})))})});
 </script>
 
 <div class="course">
   <div class="description" style="--description-height: {$courseLive ? 2 : 9}em">
-  {#if typeof theCourse.course.description === 'string' }
-    {@html theCourse.course.description}
+  {#if typeof course.course.description === 'string' }
+    {@html course.course.description}
   {:else}
-    {@html theCourse.course.description.join('')}
+    {@html course.course.description.join('')}
   {/if}
  </div>
  <div class="keyboard">
@@ -41,15 +41,17 @@
       <div class="gauge"><Gauge speed={$velocity/8} errorrate={$errors / $totalHits}/>
         <div class="odo"><ODO value={courseText.length}/></div></div> 
         <div class="focus {char2Class[courseText[0]]}">{@html courseText[0] === " " ? "&nbsp;" : courseText[0]}</div>{courseText.substring(1)}
-        <div class="key target pointer" on:click={(evt) => {toggleCrossHairs(evt)}}>
+        <div class="key target pointer" onclick={(evt) => {toggleCrossHairs(evt)}}>
           {#if $actionStore.showCrossHairs}
           hide
           {:else}show
         {/if}</div>
     </div>
+    <div id="rows"> 
     {#each rows as row}
       <Row rowData={row}/>
     {/each}
+    </div>
   {:catch error}<p>error{error.message}</p>
   {/await}
   </div>
@@ -81,10 +83,12 @@
     border-left: 3px solid #CC44BB;
   }
   .course .description {
+    font-family: monospace;
     font-size: 1.9em;
     text-align: left;
     max-height: var(--description-height);
     overflow-y: scroll;
+    color: #000000;
     transition-property: max-height;
     transition-duration: 1.5s;
   }

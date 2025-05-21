@@ -1,6 +1,7 @@
 <script>
   import Key from "./Key.svelte";
-  export let rowData;
+  let {rowData} = $props();
+  console.log("row : " + rowData);
 </script>
 <style>
   .row {

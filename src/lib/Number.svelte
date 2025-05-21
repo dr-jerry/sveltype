@@ -1,15 +1,14 @@
 <script>
-    export let nr;
-    export let direction; // only use 1 or -1 indicates direction.
-    export let dure=200;
-      var nh;
+    let {nr, direction, dure=200} = $props();
+
+    const dy = -2;
+    let nh = $state();
   
-      function roll(node, { delay = 1,
-                                               duration= dure}) {
+      function roll(node, { delay = 0, duration= dure}) {
           return {
               delay: delay,
               duration: duration,
-              css: t => `margin-top: ${-nh/3 + direction*(t-1) * nh/3}px`
+              css: (t) => `margin-top: ${1*(-nh/3 + dy - direction*(t) * nh/3)}px`
           }
       }
   </script>
@@ -19,7 +18,9 @@
       margin-top: var(--scroll);
   }
   </style>
-  <div class="middle" out:roll bind:clientHeight={nh} style="--scroll:{-nh/3}px">
+
+  {#key direction}
+  <div class="middle" in:roll = {{duration:200}} bind:clientHeight={nh} style="--scroll:{1*(-nh/3 + dy)}px">
       <div>
               {nr-direction >= 0 ? nr - direction % 10 : 9}
       </div>
@@ -30,3 +31,4 @@
               {nr+direction >= 0 ? nr + direction % 10 : 9}
       </div>
   </div>
+  {/key}

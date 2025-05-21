@@ -1,7 +1,7 @@
 <script>
     import { actionStore } from './actionstore.js';
-    export let keyData = {};
-    let focus = false;
+    let {keyData = {}} = $props(); 
+    let focus = $state(false);
     let missed = 0;
     export const stats = {}
     

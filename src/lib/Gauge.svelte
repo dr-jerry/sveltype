@@ -1,10 +1,8 @@
 <script>
-	export let speed;
-    export let errorrate;
-	export let radius=40;
-    let delta, point, pointr;
+	let { speed, errorrate, radius=40} = $props();
+    let delta, pointr;
     const deltaR = -10;
-	$: point = calculateDelta(1/6, speed, errorrate, radius);
+	const point = $derived(calculateDelta(1/6, speed, errorrate, radius));
 
 
     let calculateM = (d,f) => `${20-d*Math.cos(f*Math.PI)} ${70 + d* Math.sin(Math.PI * f)}`;

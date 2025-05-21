@@ -1,31 +1,26 @@
 <script>
-    import{ actionStore, statStore } from './actionstore.js';
-	import ODO from './ODO.svelte';
+	import Intro from './lib/Intro.svelte'
+	import ConfigMenu from './lib/ConfigMenu.svelte';
+	import { actionStore, statStore } from './lib/actionstore';
+	import Course from './lib/Course.svelte';
+
 	let configs = [{id: "en/qwerty", txt : "English / Qwerty"}, {id: "nl/qwerty", txt: "Nederlands / Qwerty"}];
-	let courseText  = "";
-	let course = undefined;
-	let courseName = "";
-	let nr=0;
-	function showCourse(evt) {	   
-		course = evt.detail;	   
+	let theCourse = $state(undefined);
+	let courseName = $state("");
+	let courseText  = $state("");
+	let lang = $state("en");
+	let showCourse = (course) => {	   
 	   	if (typeof course.course.course_text === "string")
 			courseText = course.course.course_text;
-		else courseText = course.course.course_text.join(' ')
+		else courseText = course.course.course_text.join(' ');
+		theCourse = course;
 		courseName = course.course.name;
 	   	statStore.reset();
 	}
-
-	function unicode2key(char) {
-        // map the unicode for enter to the enter key.
-		if (char === '\u23CE')
-			return 'Enter';
-		return char;
-	}
-
 	function handleType(evt) {
-		if (course && $statStore.startTime) {
+		if (theCourse && $statStore.startTime) {
 			let now = new Date().getTime();
-			if (unicode2key(courseText[0]) === evt.key || course.ignoreError) {
+			if (unicode2key(courseText[0]) === evt.key || theCourse.ignoreError) {
 				actionStore.update((as) => ({...as, ...{expected: courseText[0]
 					, "typed" : evt.key, focus: courseText[1] || "end", missed: 0 }}));
 
@@ -36,32 +31,34 @@
 
 				statStore.miss({typed: evt.key, missed: unicode2key(courseText[0])});
 			}
-		} else if (course && evt.key === ' ') { // start the course.
+		} else if (theCourse && evt.key === ' ') { // start the course.
 			statStore.init()
 		}
 	}
+	function unicode2key(char) {
+        // map the unicode for enter to the enter key.
+		if (char === '\u23CE')
+			return 'Enter';
+		return char;
+	}
 
-	import ConfigMenu from './ConfigMenu.svelte';
-	import Course from './Course.svelte';
+
+
+
 </script>
-
 <svelte:window on:keypress|preventDefault={ handleType }/>
-<!-- preventDefault is for preventing Firefox' search when pressing a quote. -->
+
 <main>
 	<h1>Learn Touch Typing</h1>
-	<p>Build with Svelte</p>
-	<div class="nav"><ConfigMenu configs={configs} selected={courseName} on:showCourse={showCourse}/></div>
-	{#if course}
+	<p>Build with Svelte 5!</p>
+	<div class="nav"><ConfigMenu  showCourse={showCourse} configs={configs} selected={courseName} setLang={(l) => lang=l}/></div>
+	{#if theCourse }
   	   <div class="play ground">
-	     <Course theCourse={course} courseText={courseText}></Course>
+	     <Course course={theCourse} courseText={courseText}></Course>
 	   </div>	
 	{:else}
 	   <div class="explanation">
-	   <p>Welcome to this open source touch typing course. Learn blind touch typing for free!<br>
-		2 languages are currently supported: Dutch and English find them on left</p>
-	   <p>If you would like to add other languages or keyboard layouts, feel free to add them yourself, you'll find the source ccode at 
-		<a href="https://github.com/dr-jerry/sveltype">github</a></p>
-		<p>to start carefully read the explanation at the start of each lesson, and don't look down at your fingers!</p>
+		<Intro language={lang}></Intro>
 	   </div>
 	{/if}
 </main>
@@ -72,6 +69,7 @@
 		padding: 1em;
 		max-width: 240px;
 		margin: 0 auto;
+		background-color: #FFFFFF;
 	}
 
 	h1 {
@@ -103,3 +101,4 @@
 		text-align: left;
 	}
 </style>
+
